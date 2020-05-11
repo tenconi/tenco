@@ -9,7 +9,7 @@ html{
 body{}
 
 #start{
-	height: 100%;
+	height: 95%;
 	min-height: 724px;
 	max-height: 1024px;
 }
@@ -62,14 +62,19 @@ header{
 	border-bottom:solid 3px rgba(0,0,0,0);
 }
 #start_nav>a:hover{
-	border-bottom:solid 3px #e192b4;
+	border-bottom:solid 3px #a1cfdf;
+	transition: 0.3s;
+	text-shadow: 0px 0px 10px #000;
+}
+#start_nav>a:active{
+	border-bottom:solid 3px #87dc0f;
 	transition: 0.3s;
 	text-shadow: 0px 0px 10px #000;
 }
 
 .row-social{
 	margin-top: 40px;
-	width: 100%;
+	width: 90%;
 	align-self:center
 }
 #social{
@@ -182,35 +187,99 @@ header{
 
 
 #who_am_i{
-	height: 724px;
+	height: 95%;
+	min-height: 724px;
+	max-height: 1024px;
 	background-image: url(../img/dantest.jpg);
-	background-position: right top;
+	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: 100% auto; /*ajustar imagen y el size*/
 }
+.container{
+	width:80%;
+	margin: auto;
+	padding:75px 0px;
+}
 .who_text{
 	color:#282c3f;
+	width: 60%;
 }
+.who_text>a{
+	color: #FFF;
+	background:#282c3f;
+	font-family: 'Raleway', sanserif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	width:150px;
+	margin-top: 45px;
+	padding: 25px 0px;
+	border-bottom:solid 3px rgba(0,0,0,0);
+	display: block;
+}
+.who_text>a:hover{
+	color:#282c3f;
+	background:#a1cfdf;
+	transition: 0.3s;
+	}
+
+/* = = = = = = finaliza QUIEN SOY = = = = = */
 
 #skills{
+	height:724px;
 	background: #222;
 	color:#FFF;
+	display: block
 }
 
 #portfolio{
 	height: 724px;
 }
-.portfolio_text{}
+.portfolio_text{
+	width: 40%;
+}
 
 #ask_me{
 height: 724px;
 }
-.ask_me_text{}
+#ask_me>.container{
+	display: flex;
+	justify-content: space-between;
+}
+.ask_me_text{
+	width: 40%;
+}
 
 #form{
-	width: 50%;
+	width: 55%;
 	display: flex;
 	flex-direction: column;
+
+}
+
+input, textarea{
+	border:none;
+	margin-bottom: 25px;
+	padding: 10px;
+	border-radius:2px;
+}
+input{
+	min-height: 50px;
+	max-height: 50px;
+}
+textarea{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 150px;
+	max-height: 150px;
+}
+::placeholder{
+	font-family: 'arial', sanserif;
+	font-size: 14px;
+}
+.send_btn{
+	width:150px;
 }
 
 footer{
@@ -223,4 +292,15 @@ footer>p{padding: 20px;}
 h1{
 	font-family: 'Exo 2', sanserif;
 	font-size: 3em;
+}
+
+.titulo{
+	padding: 10px 10px 30px 10px;
+}
+
+p{
+	font-family: 'Raleway', sanserif;
+	font-weight: 600;
+	font-size: 1.3em;
+	line-height: 1.7em;
 }

@@ -13,10 +13,9 @@
 <body>
 
 <div id="start">
-	
 	<div class="row-header">
 		<header>
-			<img src="img/tenco_logo_light.svg" class="tenco_brand">
+			<img src="img/tenco_logo_light.svg" class="tenco_brand" title="Diseño Gráfico y Web by Daniel Tenconi">
 				<br>
 			<svg id="linea">
 			<line x1="50" y1="1" x2="375" y2="1" stroke="#95d0da" stroke-width="1">
@@ -27,17 +26,17 @@
 			</svg>
 
 			<nav id="start_nav">
-				<a href="#">full bio</a>
-				<a href="#">portfolio</a>
-				<a href="#">contacteme</a>
+				<a href="#who_am_i">bio</a>
+				<a href="#portfolio">portfolio</a>
+				<a href="#ask_me">contacteme</a>
 			</nav>
 	
 			<div class="row-social">
 				<nav id="social">
-					<a href="#" class="social_button-fb" title="facebook"></a>
-					<a href="#" class="social_button-inst" title="instagram"></a>
-					<a href="#" class="social_button-pint" title="pinteres"></a>
-					<a href="#" class="social_button-link" title="linkedin"></a>
+					<a href="#" target="_blank" class="social_button-fb" title="facebook"></a>
+					<a href="#" target="_blank" class="social_button-inst" title="instagram"></a>
+					<a href="#" target="_blank" class="social_button-pint" title="pinteres"></a>
+					<a href="#" target="_blank" class="social_button-link" title="linkedin"></a>
 					<a href="#" class="social_button-menu" title="menu"></a>
 				</nav>
 			</div>	
@@ -48,72 +47,98 @@
 
 
 <div id="who_am_i">
-	<section class="who_text">
-		<h1>¿Quién soy?</h1>
-		<p>
-		¡Hola! 
-		<br>
-		Mi nombre es Daniel Tenconi.
-		<br>
-		Soy diseñador, comunicador visual y desarrollador web independiente.
-		<br>
-		Mi objetivo es brindar soluciones gráficas y comunicacionales.
-		</p>
-	</section>
+	<div class="container">
+		<section class="who_text">
+			<h1 class="titulo">¿Quién soy?</h1>
+			<p>
+			¡Hola! 
+			<br>
+			Mi nombre es Daniel Tenconi.
+			<br>
+			Soy diseñador, comunicador visual y desarrollador web independiente.
+			</p>
+			<br>
+			<p>
+			Mi objetivo es brindar soluciones gráficas y comunicacionales.
+			</p>
+			<a href="#">Full Bio</a>
+		</section>
+	</div>
 </div>
 
 <section id="skills">
-	<h1>Habilidades y conocimientos</h1>
-	<ul>
-		<li>html</li>
-		<li>css</li>
-		<li>php</li>
-		<li>illustrator</li>
-		<li>photoshop</li>
-		<li>Autodesk 3dMax</li>
-		<li>corel</li>
-		<li></li>
+	<div class="container">
+		<h1 class="titulo">Habilidades y conocimientos</h1>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>php</li>
+			<br>
+			<li>git hub</li>
+			<br>
+			<li>frameworks
+				<ul>
+					<li>bootstrap</li>
+					<li>foundation</li>
+					<li>materialize</li>
+					<li>skeleton</li>
+				</ul>
+			</li>
+			<br>
+			<li>wordpress</li>
+			<br>
+			<li>Adobe
+				<ul>
+					<li>illustrator</li>
+					<li>photoshop</li>
+					<li>premiere</li>
+				</ul>
+			</li>
+			<br>
+			<li>Autodesk 3dMax</li>
+			<br>
+			<li>corel</li>
 
-	</ul>
-	
+		</ul>
+	</div>
 </section>
 
 
 
 <div id="portfolio">
-	<section class="portfolio_text">
-		<h1>Portfolio</h1>
-		<p>
-		En esta sección he seleccionado algunos de mis trabajos que he ido realizando a lo largo de este tiempo.
-		<br>
-		Dentro de los cuales trataré de dejar algunos de los trabajos más representativos de cada
-		</p>
-	</section>
-
+	<div class="container">
+		<section class="portfolio_text">
+			<h1 class="titulo">Portfolio</h1>
+			<p>
+			En esta sección he seleccionado algunos de mis trabajos que he ido realizando a lo largo de este tiempo.
+			<br>
+			Dentro de los cuales trataré de dejar algunos de los trabajos más representativos de cada
+			</p>
+		</section>
+	</div>
 </div>
 
 
-
-
 <div id="ask_me">
-	<section class="ask_me_text">
-		<h1>Consúlteme</h1>
-		<p>
-		Por favor, no dude en dejarnos su consulta, comentario o propuesta.
-		<br>
-		Le responderemos a la brevedad.
-		<br>
-		Desde ya ¡muchas gracias!! 
-		</p>
-		
-	</section>
+	<div class="container">
+		<section class="ask_me_text">
+			<h1>Consúlteme</h1>
+			<p>
+			Por favor, no dude en dejarnos su consulta, comentario o propuesta.
+			<br>
+			Le responderemos a la brevedad.
+			<br>
+			Desde ya ¡muchas gracias!! 
+			</p>
+		</section>
 
-
-	<form id="form">
-		<input type="text" name="name" placeholder="Nombre o Razón Social" required>
-		<input type="email" name="name" placeholder="e&#126;mail" required><textarea placeholder="Dejenos su consulta, le responderemos a la brevedad." required></textarea>
-	</form>
-
+		<form id="form">
+			<input type="text" name="nombre" placeholder="Nombre o Razón Social" required>
+			<input type="email" name="correo" placeholder="e&#126;mail" required>
+			<textarea name="mensaje" placeholder="Dejenos su consulta y le responderemos a la brevedad." required></textarea>
+			<input type="submit" name="send" value="enviar" class="send_btn">
+		</form>
+	</div>
 </div>
 
 <footer>
