@@ -4,25 +4,32 @@
 	box-sizing: border-box;
 }
 html{
-	background: #282c3f;
+	background: #404041; /*282c3f*/
 }
 body{
 	}
 #start{
 	height: 724px;
-	display: block;
 }
 .row_start{
 	height:33.3%;
 	width:auto;
-	display: block;
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
 }
 .tenco_brand{
 	height: 150px;
-	justify-content: center;
 }
 
+.start_nav{
+	display: flex;
+	justify-content: center
+}
+.start_nav a{
+	display: flex;
+	justify-content: center
+}
 #who_am_i{
 	height: 724px;
 	background-image: url(../img/dantest.jpg);
@@ -30,14 +37,24 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% auto; /*ajustar imagen y el size*/
 }
+.who_text{
+	color:#282c3f;
+}
+
+#skills{
+	background: #222;
+}
 
 #portfolio{
 	height: 724px;
 }
+.portfolio_text{}
 
 #ask_me{
 height: 724px;
 }
+.ask_me_text{}
+
 #form{
 	width: 50%;
 	display: flex;
