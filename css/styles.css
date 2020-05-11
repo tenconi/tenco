@@ -4,32 +4,87 @@
 	box-sizing: border-box;
 }
 html{
-	background: #404041; /*282c3f*/
+	background: #282c3f; /*282c3f  // 404041 */
 }
-body{
-	}
+body{}
+
 #start{
-	height: 724px;
-}
-.row_start{
-	height:33.3%;
-	width:auto;
-	display: flex;
-	flex-direction: column;	
-	justify-content: center;
-}
-.tenco_brand{
-	height: 150px;
+	height: 100%;
+	min-height: 724px;
+	max-height: 1024px;
 }
 
-.start_nav{
-	display: flex;
-	justify-content: center
+.row-header{
+	display: flex !important;
+	justify-content: center;
 }
-.start_nav a{
+header{
+	width: 425px;
 	display: flex;
-	justify-content: center
+	flex-direction:column;
+	flex-wrap: nowrap;
+	margin-top: 90px;
 }
+.tenco_brand{
+	width:100%;
+	display: block;
+	margin-bottom: 20px;
+}
+.slogan{
+	color:#e192b4;
+	font-family: 'Raleway', sanserif;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	letter-spacing: 4px;
+	font-weight: 400;
+	text-align: center;
+	border-top: solid 1px #95d0da;
+	border-bottom: solid 1px #95d0da;
+	padding: 15px 0px 20px;
+}
+
+#start_nav{
+	display: flex;
+}
+#start_nav a{
+	color: #FFF;
+	font-family: 'Raleway', sanserif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	width:150px;
+	padding: 50px 0px 25px 0px;
+	border-bottom:solid 3px rgba(0,0,0,0);
+}
+#start_nav>:hover{
+	border-bottom:solid 3px #e192b4;
+}
+
+.row-social{
+	margin-top: 40px;
+	width: 70%;
+	align-self:center
+}
+#social{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px 0px;
+}
+.social_button{
+	height:37px;
+	width:37px;
+	margin:10px;
+	border-radius: 100%;
+	box-shadow: 0px 5px 5px rgba(2,2,2,0.2);
+}
+.social_button:last-child{display: none;}
+
+
+/* = = = = = = finaliza HEADER = = = = = */
+
+
 #who_am_i{
 	height: 724px;
 	background-image: url(../img/dantest.jpg);
@@ -43,6 +98,7 @@ body{
 
 #skills{
 	background: #222;
+	color:#FFF;
 }
 
 #portfolio{
