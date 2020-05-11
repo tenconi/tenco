@@ -37,10 +37,14 @@ header{
 	font-variant: small-caps;
 	letter-spacing: 4px;
 	font-weight: 400;
-	text-align: center;
+	text-align: center;/*
 	border-top: solid 1px #95d0da;
-	border-bottom: solid 1px #95d0da;
+	border-bottom: solid 1px #95d0da;*/
 	padding: 15px 0px 20px;
+}
+#linea{
+	width: 425px;
+	height:3px;
 }
 
 #start_nav{
@@ -60,12 +64,12 @@ header{
 #start_nav>a:hover{
 	border-bottom:solid 3px #e192b4;
 	transition: 0.3s;
-	text-shadow: 0px 3px 10px #000;
+	text-shadow: 0px 0px 10px #000;
 }
 
 .row-social{
 	margin-top: 40px;
-	width: 70%;
+	width: 100%;
 	align-self:center
 }
 #social{
@@ -158,7 +162,7 @@ header{
 	background-image: url(../img/menu-pink.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	display: ;/* MODIFICAR*/
+	display:none;/* MODIFICAR*/
 }
 .social_button-menu:hover{
 	background-image: url(../img/menu-blue.svg);
