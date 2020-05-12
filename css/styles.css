@@ -37,6 +37,10 @@ body{}
 .col-11{width:91.66%;}
 .col-12{width:100%;}
 
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+	margin-bottom: 10px;
+margin-left: 5px;
+margin-right: 5px;}
 
 /* = = = = = = finaliza AJUSTES  GRALES = = = = = */
 
@@ -213,9 +217,9 @@ header{
 	min-height: 724px;
 	max-height: 1024px;
 	background-image: url(../img/dantest.jpg);
-	background-position: right center;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto; /*ajustar imagen y el size*/
+	background-size: cover; /*ajustar imagen y el size*/
 }
 .container{
 	width:80%;
@@ -268,7 +272,8 @@ header{
 }
 .portfolio_text{
 	width: 40%;
-	padding-right: 3vh;
+	padding-right: 4vh;
+	color:#FFF;
 }
 
 #works{
@@ -332,7 +337,9 @@ h1{
 }
 
 .titulo{
-	padding: 10px 10px 30px 10px;
+	padding: 10px 10px 20px 10px;
+	border-bottom: solid 4px #89c53f;
+	display: inline-block;
 }
 
 p{
@@ -341,3 +348,4 @@ p{
 	font-size: 1.3em;
 	line-height: 1.7em;
 }
+h1+p{margin-top: 50px;}
