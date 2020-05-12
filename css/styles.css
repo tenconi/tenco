@@ -18,6 +18,22 @@ body{}
 	display: flex !important;
 	justify-content: center;
 }
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.67%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+/* = = = = = = finaliza AJUSTES  GRALES = = = = = */
+
 header{
 	width: 425px;
 	display: flex;
@@ -213,7 +229,7 @@ header{
 	text-align: center;
 	text-decoration: none;
 	width:150px;
-	margin-top: 45px;
+	margin-top: 100px;
 	padding: 25px 0px;
 	border-bottom:solid 3px rgba(0,0,0,0);
 	display: block;
@@ -233,12 +249,20 @@ header{
 	display: block
 }
 
+/* = = = = = = finaliza HABILIDADES = = = = = */
+
 #portfolio{
 	height: 724px;
 }
 .portfolio_text{
 	width: 40%;
 }
+
+#works{
+	width: 60%;
+}
+
+/* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{
 height: 724px;
