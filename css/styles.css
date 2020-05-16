@@ -286,6 +286,113 @@ header{
 	width: 60%;
 }
 
+#works a{
+	padding:0px;
+	margin:0px;
+	position: relative;
+	display: flex;
+}
+.port-1{
+	height: 200px;
+	display: flex;
+}
+.port-2{
+	height: 150px;
+	display: flex;
+}
+.port-3{
+	height: 100px;
+	display: flex;
+}
+
+
+
+[class |= portfolio]{
+	border:solid 1px #FFF;
+}
+.portfolio-inst{
+	background:url(../img/img-institucional-261x190.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-web{
+	background:url(../img/dis-web-364x191.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-3d{
+	background:url(../img/3d-154x140.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-pics{
+	background:url(../img/retoque-309x140.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-disco{
+	background:url(../img/disco-154x140.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-effect{
+	background:url(../img/proximamente.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	display:flex;
+	justify-content: center;
+}
+
+.curtain{
+	width: 100%;
+	height:100%;
+	background: rgba(243,153,192,0.90); /*rgba(161,207,223,0.9)*/;
+	display: flex;
+	justify-content: center;
+	display: none;
+	animation: cortina 0.3s linear;	
+}
+@-webkit-keyframes cortina{
+	0%{opacity: 0;
+		height: 0%;
+		border-bottom: solid 2px #FFF;
+	}
+	25%{}
+	50%{}
+	75%{}
+	99%{border-bottom: solid 10px #FFF;}
+	100%{opacity: 0.93;
+		height: 100%;
+	}
+}
+.shade-text{
+	text-align: center;
+	position: absolute;
+	color:#FFF;
+	text-shadow: 0px 0px 10px #000;
+	align-self: center;
+}
+
+
+#works a:hover .curtain{
+	display: flex;
+}
+
+/*
+.effect:hover >.shade-text{
+	display: flex;animation: ejemplo 2s infinite}
+*/
+
+@-webkit-keyframes ejemplo {
+	0%{opacity:0;}
+	25%{opacity:0.6;}
+	50%{opacity:0.3;
+		color:red;}
+	75%{opacity:1;}
+	85%{opacity:0.5;}
+	100%{opacity:0.1}
+}
+
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{
