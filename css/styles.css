@@ -305,8 +305,6 @@ header{
 	display: flex;
 }
 
-
-
 [class |= portfolio]{
 	border:solid 1px #FFF;
 	border-radius:2px;
@@ -379,35 +377,10 @@ header{
 	align-self: center;
 }
 
-
 #works a:hover .curtain{
 	display: flex;
 }
 
-/*
-.effect:hover >.shade-text{
-	display: flex;animation: ejemplo 2s infinite}
-
-
-@-webkit-keyframes ejemplo {
-	0%{opacity:0;}
-	25%{opacity:0.6;}
-	50%{opacity:0.3;
-		color:red;}
-	75%{opacity:1;}
-	85%{opacity:0.5;}
-	100%{opacity:0.1}
-}*/
-.modal{
-	position: absolute;
-	height: 100%;
-	min-height: 724px;
-	max-height: 1024px;
-	width:100%;
-	background: rgba(0,0,0,0.85);
-	z-index: 1;
-	display: flex;
-}
 .close{
 	height: 45px;
 	width: 45px;
@@ -419,18 +392,42 @@ header{
 	line-height: 45px;
 	font-family: 'Arial', sanserif;	
 	border-radius: 50%;
-	align-items: flex-end;
+	align-items:flex-end;
+	margin: 25px;
 }
-/*.works-institucional{
+.close:hover{
+	animation: cerrar 0.3s infinite;
+}
+@-webkit-keyframes cerrar{
+	0%{}
+	50%{transform:scale(0.8);}
+	100%{}
+}
+
+
+#modal-institucional{
+	position: absolute;
+	height: 100%;
+	min-height: 724px;
+	max-height: 1024px;
+	width:100%;
+	background: rgba(0,0,0,0.85);
+	z-index: 1;
+	display: none;
+}
+#modal-institucional:target{
+	display: flex;
+	flex}
+
+
+.works-institucional{
 	position: relative;
 	margin:auto;
 	padding: 100px;
-	border:solid 2px #a1cfdf;
-	background: rgba(243,153,192,0.9);
 	width:95%;
 	height:95%;
 	border-radius: 10px;
-}*/
+}
 
 
 /* = = = = = = finaliza PORTFOLIO = = = = = */
