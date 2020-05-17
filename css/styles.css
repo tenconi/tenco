@@ -422,7 +422,14 @@ header{
 #modal-brand:target, #modal-web:target {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;}
+	justify-content: center;
+	animation: aparicion 0.4s linear;
+}
+
+@-webkit-keyframes aparicion{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
 
 .works-brand, .works-web{
 	position: relative;
@@ -440,24 +447,39 @@ header{
 [class |= job]{
 	background: rgba(225,225,225);
 	border-radius: 5px;
-	width:49%;
+	width:48%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	padding: 20px;
 	margin:0px 5px 10px;
 }
+[class |= job]:hover{background: rgb(255,255,255)}
 
 [class |= jobtext]{
 	margin:auto 20px;
 	border-left: solid 2px silver;
 	padding-left: 15px;
+	align-items: flex-start;
 }
 
 h2{
 	font-family: 'Raleway',sanserif;
-
 }
+.bajada{
+	font-family: 'Arial', sanserif;
+	font-size:0.9em;
+	font-style: italic;
+	color:#999;
+	font-weight: 400;
+}
+
+.job-1{order:6;}
+.job-2{order:2;}
+.job-3{order:1;}
+.job-4{order:5;}
+.job-5{order:3;}
+.job-6{order:4;}
 
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
