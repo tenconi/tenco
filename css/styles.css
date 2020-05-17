@@ -309,6 +309,9 @@ header{
 
 [class |= portfolio]{
 	border:solid 1px #FFF;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
 }
 .portfolio-inst{
 	background:url(../img/img-institucional-261x190.jpg) no-repeat;
@@ -347,6 +350,9 @@ header{
 	width: 100%;
 	height:100%;
 	background: rgba(243,153,192,0.90); /*rgba(161,207,223,0.9)*/;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
 	display: flex;
 	justify-content: center;
 	display: none;
@@ -360,7 +366,7 @@ header{
 	25%{}
 	50%{}
 	75%{}
-	99%{border-bottom: solid 10px #FFF;}
+	99%{border-bottom: solid 15px #FFF;}
 	100%{opacity: 0.93;
 		height: 100%;
 	}
@@ -381,7 +387,7 @@ header{
 /*
 .effect:hover >.shade-text{
 	display: flex;animation: ejemplo 2s infinite}
-*/
+
 
 @-webkit-keyframes ejemplo {
 	0%{opacity:0;}
@@ -391,7 +397,41 @@ header{
 	75%{opacity:1;}
 	85%{opacity:0.5;}
 	100%{opacity:0.1}
+}*/
+.modal{
+	position: absolute;
+	height: 100%;
+	min-height: 724px;
+	max-height: 1024px;
+	width:100%;
+	background: rgba(0,0,0,0.85);
+	z-index: 1;
+	display: flex;
 }
+.close{
+	height: 45px;
+	width: 45px;
+	background: #f399c0;
+	color:#FFF;
+	text-decoration:none;
+	text-align: center;
+	font-size:30px;
+	line-height: 45px;
+	font-family: 'Arial', sanserif;	
+	border-radius: 50%;
+	align-items: flex-end;
+}
+/*.works-institucional{
+	position: relative;
+	margin:auto;
+	padding: 100px;
+	border:solid 2px #a1cfdf;
+	background: rgba(243,153,192,0.9);
+	width:95%;
+	height:95%;
+	border-radius: 10px;
+}*/
+
 
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
