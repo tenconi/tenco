@@ -394,13 +394,15 @@ header{
 	border-radius: 50%;
 	align-items:flex-end;
 	margin: 25px;
+	box-shadow: 0px 0px 15px rgba(255,255,255,0.3);
 }
 .close:hover{
-	animation: cerrar 0.3s infinite;
+	animation: cerrar 0.3s linear;
 }
 @-webkit-keyframes cerrar{
 	0%{}
-	50%{transform:scale(0.8);}
+	25%{background:#a1cfdf;}
+	50%{transform:scale(0.6);}
 	100%{}
 }
 
