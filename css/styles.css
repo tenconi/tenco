@@ -481,17 +481,25 @@ h2{
 .job-5{order:3;}
 .job-6{order:4;}
 
+.works-web{
+	display: flex;
+	flex-direction: column;
+}
 [class|=web]{
 	background: rgba(225,225,255,0.9); 
 	display:flex;
 	flex-direction: row;
 	margin-bottom: 20px;
-	padding: 5px;
+	padding: 5px 5px 15px 5px;
 	border-radius: 5px;
 }
 
 .jobtext-7, .jobtext-8{
 	margin-top: 20px;
+}
+iframe{
+	width:75%;
+	height:300px;
 }
 
 /* = = = = = = finaliza PORTFOLIO = = = = = */
