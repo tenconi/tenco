@@ -581,6 +581,8 @@ iframe{
 #ask_me{
 min-height: 724px;
 max-height: 1024px;
+
+	background: linear-gradient(180deg,#282c3f,#f399c0);
 }
 #ask_me>.container{
 	display: flex;
@@ -588,6 +590,7 @@ max-height: 1024px;
 }
 .ask_me_text{
 	width: 40%;
+	color: #FFF;
 }
 
 #form{
@@ -602,6 +605,7 @@ input, textarea{
 	margin-bottom: 25px;
 	padding: 10px;
 	border-radius:2px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 input{
 	min-height: 50px;
@@ -625,6 +629,7 @@ textarea{
 	font-family: 'Raleway', sanserif;
 	font-size: 1em;
 	font-weight: 600;
+	cursor: pointer;
 }
 .send_btn:hover{
 	background: #a1cfdf;
