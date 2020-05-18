@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Universo de Mascotas</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/css.css" rel="stylesheet">
+<link href="../fonts/fonts.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../img/favicom.png" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body class="fondo-contacto">
+<!--div class="idioma">idioma</div>
+<div class="logo"></div>
+<header>Bienvenidos
+<div class="newsletter">Newsletter!</div>
+</header>
+<nav>
+<div class="boton inicio">Inicio</div>
+<div class="boton institucional">Institucional</div>
+<div class="boton mision">Nuestra Misión</div>
+<div class="boton testimonios">Testimonios</div>
+<div class="boton oracion">Oración</div>
+<div class="boton contacto">Contáctenos!</div>
+</nav>
+<section><p>Universo de Mascotas es una organización sin fines de lucro dedicada y abocada a ayudar a nuestras mascotas y a toda la vida animal, esos seres especiales que se encargan de alegrar y endulzar nuestros corazones.
+ 
+Conjunto a la ayuda de los amigos de las mascotas, y, de nuestros seguidores, pudimos levantar ésta organización para poder hacer frente a las adversidades a las que nuestros pequeños amigos se enfrentan.</p></section-->
+<div class="fb"><a href="https://www.facebook.com/Universo-De-Mascotas-1919157228311977" target="_blank">
+Fb
+</a>
+</div>
+
+<div id="contenedor">
+<div class="idioma">
+        <span>idioma</span>
+    <div class="desplegable">
+        <div class="esp"><a href="#"><img src="../img/esp.png"></a></div>
+        <div class="eng"><a href="../eng/index.html"><img src="../img/eng.png"></a></div>
+        <div class="deu"><a href="../seite_im_bau.html"><img src="../img/deu.png"></a></div>
+    </div>
+</div>
+<h1><img src="../img/Universo-de-Mascotas-Logo.png" alt="Universo de mascotas centro de oracion para mascotas"></h1>
+<header>
+    <h2>Contactenos!!</h2>
+    <div class="newsletter">
+        <div class="news_tit">Newsletter!</div>
+        <form class="news_desp" class="nesp_form" id="formulario" method="post" action="newsletter.php">
+            <ul>
+                <p>¡Envíanos tu nombre y tu e-mail y recibirás novedades e importantes cadenas de oración!!</p>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="news_nombre" id="news_nombre" placeholder="nombre" ></input>
+                </li>
+
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type='text' name='news_Email' id='news_email' placeholder="tu@correo.com" required>
+                </li>
+
+                <li align: right>
+                    <button class="submit" type='submit' value='Enviar formulario'>Enviar</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <nav>
+        <div class="menu_bar">
+        <a href="#" class="boton_menu"><span><img src="../img/icon-menu.png"></span></a>
+        </div>
+
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="#">institucional<img src="../img/flecha.png"></a>
+            <ul>
+                <li><a href="quienes-somos.html">¿quienes somos?</a>
+                <li><a href="que-hacemos.html">¿que hacemos?</a>
+                <li><a href="donde-estamos.html">¿donde estamos?</a>
+            </li>
+            </ul>
+            <li><a href="nuestra-mision.html">nuestra mision</a></li>
+            <li><a href="#">mascotas<img src="../img/flecha.png"></a>
+                <ul>
+                <li><a href="../pagina_en_construccion.html">perdidas</a></li>
+                <li><a href="../pagina_en_construccion.html">encontradas</a>
+            </li>
+            </ul>
+            <li><a href="testimonios.html"><b>Oremos Por:</b></a></li>
+            <li><a href="oraciones.html">oraciones</a></li>
+            <li><a href="contacto.html">contactenos</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="formulario">
+        <form name="formulario" class="contact_form" id="formulario" method="post" action="contacto.php" enctype="multipart/form-data"> 
+                <ul>
+
+      
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required>
+                    <span class="form_hint">Formato correcto: "Nombre (s)"</span>
+                </li>
+                
+                <li>
+                    <label for="email">E-mail:</label>
+                    <input type='text' name='E-mail' id='E-mail' placeholder="tu@correo.com" required>
+                    <span class="form_hint">Formato correcto: "ejemplo@hotmail.com"</span>
+                </li>
+                
+                <li>
+                    <label for="apellidos">Nombre de tu Mascota:</label>
+                    <input type='text' name='Mascota' id='Mascota' placeholder="Nombre de tu Mascota" required>
+                    <span class="form_hint">Formato correcto: "Mascota"</span>
+                </li>
+                        
+                <li>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje"></textarea>
+                    <span class="form_hint">Ingresar información adicional</span>
+                </li>
+
+                <li>
+                    <label for="adjuntar archivo">Adjuntar archivo:</label>
+                    <input type='file' name='archivo1' id='archivo1' placeholder="carga tu archivo" required>
+                </li>
+
+                <li align='center'>
+                    <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
+                    <button class="submit" type='reset' value='Reiniciar formulario'>Borrar Datos</button>
+                </li>
+
+                <li>
+                     <span class="required_notification">* Datos requeridos</span>
+                </li>
+            </ul>
+        </form>
+    </section>
+</div>
+<div class="gradient"></div>
+</body>
+</html>

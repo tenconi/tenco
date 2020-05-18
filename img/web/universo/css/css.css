@@ -1,0 +1,784 @@
+@charset "UTF-8";
+/* CSS Document */
+*{box-sizing:border-box}/*toma tamaño de pading interno*/
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+} /*--reset--*/
+body{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+}
+
+.fondo-index{
+	background-image:url(../img/inicio-x-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-quienes {
+	background-image:url(../img/quienes-somos-1000px-72ppi-Brillosa.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-quehacemos {
+	background-image:url(../img/que-hacemos-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-donde{
+	background-image:url(../img/donde-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-mision{
+	background-image:url(../img/nuestro-objetivo-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-oraciones{
+	background-image:url(../img/oraciones-1000px-72ppi-rayos.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+.fondo-testimonios{
+	background-image:url(../img/testimonios-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	margin:0px;
+	padding:0px;
+	min-height:100%;
+	height:auto;
+	position:relative;
+	background-attachment:fixed;
+}
+.fondo-contacto{
+	background-image:url(../img/contacto-x-1000px-72ppi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+	background-attachment:fixed;
+}
+#contenedor {
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	padding-left:250px;
+	z-index:1;
+	padding-bottom:1px;
+}
+h1 {position:absolute;
+	left:0;
+	top:0;
+	height:auto;
+	width:250px;
+	background-color:rgba(255,255,255,0.45);
+	border-radius:0px 0px 15px 15px;
+	box-shadow:5px 5px 25px rgba(0,0,0,0.50);
+}
+h1 img{
+	width:100%;
+	display:block;
+}
+header{
+	position:relative;
+	z-index: 9;
+}
+h2 {height:64px;
+	width:100%;
+	font-size:30px;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	background-color:rgba(0,0,0,0.45);
+	text-indent:170px;
+	line-height:64px;
+	font-family:'lithosReg';
+	}
+
+
+
+
+
+
+.newsletter {
+	position:absolute;
+	top:20px;
+	right:40px;
+	font-size:16px;
+	font-style: italic;
+	color:#F7970A;
+	padding:10px 10px;
+	cursor:pointer;
+	z-index: 3;
+}
+
+.news_desp {width:300px; height:145px; padding: 5px; display: none; margin: auto;}
+.news_tit {width: 100%;text-align: right;}
+.news_desp p {font-family:verdana, sans-serif;
+	font-size: 12px; margin: 5px 0;}
+.news_desp ul {display: inline-block; }
+.news_desp ul li {padding:7px 0; position: relative; }
+.news_desp input {background-color: white; width: 150px;}
+.news_desp label {font-size: 12px; width: 60px;display: inline-block;}
+.news_desp button {width:90px ; height: 25px;font-size: 13px; padding: 2px; margin-left: 100px;}
+
+.newsletter:hover{
+	background:#F7970A;
+	color:#FEC414;
+	border-radius:15px 4px 15px 15px;
+	color:#FFFFFF;
+}
+.newsletter:hover > .news_desp {display:block;}
+
+
+
+
+
+
+
+header nav ul {
+	display:block;
+	padding:3px 0px 0px 10px;
+}
+header nav ul li {
+	font-size:12px;
+	text-transform:uppercase;
+	text-align:center;
+	width:14.28%;
+	padding:0px 1px;
+	float:left;
+	position: relative;
+}
+header nav ul li a{
+	display:block;
+	height:25px;
+	color: white;
+	background-color:rgba(0,0,0,0.45);
+	border-radius:0px 0px 15px 15px;
+	line-height:25px
+}
+
+	header nav ul li ul {
+		display:none;
+		padding:0;
+		position: absolute;
+		z-index: 2;
+		width:95%;
+		left: 0
+	}
+	header nav ul li ul li {
+		font-size:12px;
+		text-transform:uppercase;
+		text-align:center;
+		padding:0px 1px;
+		width: 100%;
+		margin:2px;
+		float:none;
+	}
+	header nav ul li ul li a {
+		border-radius: 0px;
+	}
+
+	header nav ul li ul li:last-child a{
+		border-radius: 0 0 15px 15px;
+	}
+
+	header nav ul li:hover > ul{
+		display:block;
+	}
+
+	header nav ul li a:hover,
+	header nav ul li a:active {
+		background-color:#FEC414;}
+
+	header nav ul li img {
+		padding:3px;
+	}
+
+header nav p {height: 22px; font-size:12px;
+		text-transform:uppercase;
+		text-align:center;
+		padding:0px 1px;
+		width: 100%;
+		margin:2px;
+		float:none;
+		color: white;
+		background-color:rgba(0,0,0,0.45);
+		border-radius:0px 0px 15px 15px;
+		line-height:25px;
+		display: none;}
+
+.fb {
+	height: 60px;
+	width: 60px;
+	background-color: #252531;
+	opacity: 0.7;
+	color: black ;
+	float: left;
+	border-radius: 0px 10px 10px 0px;
+	font-family: Verdana, sans-serif;
+	font-style: bold;
+	font-size: 24px;
+	line-height: 60px;
+	text-align: center;
+	margin-top: 25%;
+	box-shadow: 1px 5px 30px;
+	position: absolute;
+	z-index: 1000;
+}
+.fb a {color: white;}
+.fb:hover {background-color: #3C5A99; opacity: 1 }
+
+.home p	{
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:22px;
+	line-height:25px;
+	color:black;
+	text-align:justify;
+	margin:10px 0px;
+}
+.home
+	{position:absolute;
+	bottom:15px;
+	padding:10px;
+}
+
+.quienes p {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:22px;
+	line-height:25px;
+	color:black;
+	text-align:justify;
+	margin:10px 0px;
+}
+.quienes {position:absolute;
+	bottom:15px;
+	padding:10px;
+}
+.hacemos p {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:20px;
+	line-height:25px;
+	color:black;
+	text-align: center;
+	margin:10px 0px;
+	width:470px;
+	height:auto;
+	float:right;
+}
+.hacemos {position:relative;
+	top:70px;
+	padding:10px;
+}
+.mapa {
+	width:400px;
+	height:300px;
+	position:relative;
+	margin:100px auto;
+}
+
+.donde p {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:22px;
+	line-height:25px;
+	color:black;
+	text-align:justify;
+	margin:10px 0px;
+}
+.donde {position:absolute;
+	bottom:15px;
+	padding:10px;
+}
+.mision p {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:22px;
+	line-height:25px;
+	color:black;
+	text-align:justify;
+	margin:10px 0px;
+}
+.mision {position:absolute;
+	bottom:15px;
+	padding:10px;
+}
+.oraciones p {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:22px;
+	line-height:25px;
+	color:black;
+	text-align:justify;
+	margin:0px 0px;
+}
+.oraciones {position:absolute;
+	margin-top:7%;
+	padding:10px 15px 0 15px;
+}
+.plegaria1 {
+	position:relative;
+	margin-top: 30px
+}
+.plegaria1 p {
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;
+	font-size:20;
+	color: #000000;
+	text-align:center;
+	width:300px;
+	height:auto;
+	padding:15px;
+	margin:auto;
+	}
+
+			.clear {clear:both}
+
+			.testimonios {
+				height:auto;
+				width:100%;
+				margin:55px auto;
+				padding:15px;
+				}
+
+			.testimonios .relato {
+				width:100%;
+				height:auto;
+				padding:10px;
+				background-color:rgba(255,255,255,0.4);
+				border-radius:10px;
+				margin:10px 0px;
+				line-height:25px;
+				}
+			.pict-mascota {
+				padding:10px;
+				position:relative;
+				float:left;
+				}
+
+			.texto-relato {overflow:hidden}
+
+			.pict-mascota img{
+				width:100px;
+				height:100px;
+				border-radius:6px;
+				}
+			h4 {
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:16px;
+				color:#000000;
+				margin:5px;
+				}
+			testimonios .relato p {
+				font-family:Verdana, Arial, Helvetica, sans-serif;
+				font-size:12px;
+				text-align:justify;
+}
+
+
+.gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+9,1+95 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 9%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 9%,rgba(255,255,255,1) 95%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 9%,rgba(255,255,255,1) 95%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	position: fixed;
+	height: 300px;
+	width:100%;
+	bottom:0px;
+	z-index:0;
+}
+.gradient-quehacemos {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+9,1+95 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 9%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 9%,rgba(255,255,255,1) 95%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 9%,rgba(255,255,255,1) 95%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	position: fixed;
+	height: 300px;
+	width:100%;
+	bottom:0px;
+	z-index:0;
+}
+
+
+
+
+
+
+
+.idioma {
+	display:block;
+	font-size:12px;
+	line-height:25px;
+	text-indent:5px;
+	color:white;
+	width:25px;
+	height:64px;
+	background-color:rgba(0,0,0, 0.45);
+	position:absolute;
+	top:0px;
+	left:-25px;
+	border-radius:12px  0px 0px 12px;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	z-index: 9
+}
+.idioma span{
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+.idioma:hover {
+	background-color:#FEC414;
+	cursor:pointer;
+	height:
+}
+
+.idioma .desplegable {
+	display: none;
+	position: relative;
+	left: -5px;
+	background-color: #FEC414;
+	width: 30px;
+	border-radius: 10px 0 0 10px;
+	transition:transform 0.7s ease-out;
+	-webkit-transition:transform 0.7s ease-out;
+	-ms-transition:transform 0.7s ease-out;
+
+}
+.idioma .desplegable a{display:block;position: relative;height:40px;width:100%;}
+.idioma .desplegable img {
+	width:22px;
+	position: relative;
+	margin: auto;
+	transition:all 0.3s ease-out;
+	-webkit-transition:all 0.3s ease-out;
+	-ms-transition:all 0.3s ease-out;
+	top: calc(50% - 10px);
+
+}
+.idioma .desplegable a:hover img{width:44px;left:-12px;}
+.idioma:hover > .desplegable {display: block;}
+
+
+
+
+
+
+
+
+.formulario {
+width:80%;
+height:auto;
+padding:10px;
+font-size: 12px;
+margin-top: 50px;
+position: relative;
+display: block;
+font-family: verdana;
+font-size: 12px;
+float: right;
+}
+
+
+.contact_form {
+width:auto;
+position: relative;
+display: block;}
+
+.contact_form ul {width:500px; position: relative;text-align: right; }
+.contact_form li {width:500px; padding: 12px; position: relative; display: inline-block;}
+.contact_form span {text-align: center; padding:5px;}
+.contact_form label {text-align: right; width:150px; margin: right;}
+.contact_form input {text-align: left; height:25px; width:300px; padding:auto; border: 1px solid #aaa; border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;}
+.contact_form textarea {text-align: left; width: 300px;    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;}
+
+#archivo1 {height: 35px}
+
+.contact_form button {display: block; position: relative; display:inline-block;}
+
+.required_notification {text-align: center; font-size: 12px; position: relative;}
+
+.form_hint {
+	font-size: 11px;
+    text-align: left;
+    margin-left: auto;
+	padding: 3px;}
+
+
+
+/* === Remove input autofocus webkit === */
+*:focus {
+    outline: none;
+}
+
+/* === Form Header === */
+/* === Form Elements === */
+/* form element visual styles */
+    /* === HTML5 validation styles === */
+    .contact_form input:required, .contact_form textarea:required {
+        background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+    }
+
+        .contact_form input:required:valid, .contact_form textarea:required:valid {
+            background: #fff url(images/valid.png) no-repeat 98% center;
+            box-shadow: 0 0 5px #5cd053;
+            border-color: #28921f;
+        }
+
+    .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+        background: #fff url(images/invalid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #d45252;
+        border-color: #b03535;
+    }
+
+/* === Form hints === */
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+    .form_hint::before {
+        content: "\25C0";
+        color: #d45252;
+        position: absolute;
+        top: 1px;
+        left: -6px;
+    }
+
+.contact_form input:focus + .form_hint {
+    display: inline;
+}
+
+.contact_form input:required:valid + .form_hint {
+    background: #28921f;
+}
+
+    .contact_form input:required:valid + .form_hint::before {
+        color: #28921f;
+    }
+
+/* === Button Style === */
+button.submit {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+    button.submit:hover {
+        opacity: .85;
+        cursor: pointer;
+    }
+
+    button.submit:active {
+        border: 1px solid #20911e;
+        box-shadow: 0 0 10px 5px #356b0b inset;
+        -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+        -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+        -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+        -o-box-shadow: 0 0 10px 5px #356b0b inset;
+ 	}
+
+ 	.menu_bar {
+	position:absolute;
+	top:20px;
+	right:10px;
+	font-size:14px;
+	font-style: normal;
+	color:white;
+	padding:10px;
+	cursor:pointer;
+	z-index: 3;
+	float: right;
+	display: none;
+}
+.menu_bar img {height: 15px; width: auto; padding-right: 7px;}
+
+ 	/* RESPONSIVE */
+ 	@media screen and (max-width:1270px){
+		#contenedor {width: 100%;padding:0px 15px 15px 15px;position: absolute;}
+ 		.idioma {margin-left: 3.5%;}
+ 		h1 {width: 16%; margin-left: 3.6%;}
+ 		h2 {width: 81.2%;float: right;text-indent:7%; font-size: 24px;}
+		nav{width: 81.6%; float:right;}
+		header nav ul li {}
+		header nav ul li a{width:auto; font-size: 11px; margin: auto; display: block;}
+		.home p {width: 80%; float: right;}
+		.fb{z-index: 9;}
+		.quienes p {width: 80%;float: right;}
+		.hacemos p {width:51%; position: relative; float: right;}
+		.donde p {width: 80%; float: right;}
+		.mision p {width: 80%;float: right;}
+		.testimonios {width: 80%; float: right;}
+		.oraciones {width: 80%; float: right; position: relative; margin: 3% 0 0 0 }
+ 	}
+
+ 	@media screen and (max-width:1200px){
+ 		#contenedor {width: 100%;padding:0px 15px 15px 15px;position: absolute;}
+ 		.idioma {margin-left: 3.5%;}
+ 		h1 {width: 16%; margin-left: 3.6%;}
+ 		h2 {width: 81.2%;float: right;text-indent:7%; font-size: 24px;}
+		nav{width: 81.6%; float:right;}
+		header nav ul li {}
+		header nav ul li a{height:auto;width:auto; font-size: 11px; margin: auto; display: block;}
+		.home p {width: 80%; float: right;}
+		.fb{z-index: 9;}
+		.quienes p {width: 80%;float: right;}
+		.hacemos p {width:51%; position: relative; float: right;}
+		.fondo-donde{position:absolute;margin-top:0px;}
+		.donde p {width: 80%; float: right;}
+		iframe{margin-top: 10%;}
+		.mision p {width: 80%;float: right;}
+		.testimonios {width: 80%; float: right;}
+		.oraciones {width: 80%; float: right; position: relative;}
+	}
+
+	@media screen and (max-width:1024px){
+
+	}
+
+ 	@media screen and (max-width:800px){
+ 		#contenedor {width: 100%;padding:0px 15px 15px 15px;position: absolute;}
+ 		.idioma {margin-left: 3.5%;}
+ 		h1 {width: 16%; margin-left: 3.6%;}
+ 		h2 {width: 81.6%;float: right;text-indent:7%; font-size: 24px;}
+		nav{width: 82%; float:right;}
+		header nav ul li {}
+		header nav ul li a{height:50px;width:auto; font-size: 10px; margin: auto; display: block;}
+		header nav ul li a img {display: block; margin: auto;}
+		.home p {width: 80%; float: right;}
+		.fb{z-index: 9;}
+		.quienes p {width: 80%;float: right;}
+		.fondo-donde{position:absolute;margin-top:0px;}
+		iframe{margin-top: 10%;}
+		.mision p {width: 80%;float: right;}
+		.testimonios {width: 80%; float: right;}
+		.oraciones {width: 80%; float: right; position: relative;}
+		.gradient {height: 60%}
+
+	}
+
+
+	@media screen and (max-width:640px){
+		#contenedor {width: 100%;padding:0 10px 10px 10px;}
+		.idioma {display: none;}
+		.fb {width:50px ; height:50px; font-size: 16px;line-height: 50px;}
+		h1 {width: 20%; margin-left: 1%;}
+ 		h2 {width: 80%;float: right;text-indent:6%; font-size: 18px; line-height:64px;}
+
+ 		header nav {width: 80%; height: 100%; float:right;}
+ 		header nav ul {position: absolute; display:;}
+		header nav ul li {width: 100%; display:inline-block; position: relative;}
+		header nav ul li a img {display: inline-block;}
+		header nav ul li ul {position: static;}
+		header nav ul li a{height:25px; width:100%px; font-size: 12px; border-radius: 0px; list-style-position: outside;}
+		header nav ul li:last-child a{border-radius: 0 0 15px 15px;}
+		header nav ul li:hover > ul{display:block;}
+
+		.menu_bar {display: block;}
+
+
+		header nav ul {display:none; }
+		header nav:hover > ul{display: block}
+		header nav ul li ul {position: static;}
+
+
+		.fondo-quehacemos {}
+		.fondo-quienes {background-attachment:;background-position:top;}
+		.home {margin-top: 280px; position: relative;}
+		.home p {width:90%; font-size: 20px; text-align: left; margin: bottom;}
+		.quienes {margin-top: 280px; position: relative;}
+		.quienes p {width:90%; font-size: 20px; text-align: left;}
+		.hacemos p {width:90%; font-size: 20px;}
+		.donde {position: relative;}
+		.donde p {width:90%; font-size: 20px; text-align: left; display: block; position: relative;}
+		.mapa {width:80%; height: auto; display: inline-flex; margin-right: 8%; position: relative;}
+		.mision p {width:90%; font-size: 20px; text-align: left;}
+		.oraciones {width:87%; margin: 13% 0 0 0; padding: 0;}
+		.oraciones p {font-size: 20px; position: relative; text-align: left;}
+		.oraciones .plegaria1 p {text-align: center;}
+		.testimonios {position: relative; width: 90%;}
+		.testimonios .relato .pict-mascota {position: relative; display: inline-block; margin: auto;}
+		.testimonios .relato .pict-mascota img {width:100% ; height: auto; display: block;}
+		.testimonios .relato .texto-relato {position: relative; display: inline-block;}
+
+		section .contact_form {}
+		.formulario {position: relative; width: 90%; top:-40px;}
+		.formulario ul {text-align: left; }
+		.formulario ul li {margin: right;}
+		.formulario ul li label {position: relative;}
+		.formulario ul li input {position: relative; display: block; width: 50%}
+		.formulario ul li textarea {position: relative; display: block; width: 50%}
+		.formulario ul li button {position: relative; display: inline-block; width: 20%; float: left;}
+		.newsletter {position:absolute; top:20px; right:20px; display: none}
+
+		.menu_bar{
+			display: block;}
+
+			.gradient {height: 85%}
+	}

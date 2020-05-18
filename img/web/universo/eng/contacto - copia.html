@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Universo de Mascotas</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/css.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../img/favicom.png" />
+</head>
+
+<body class="fondo-contacto">
+<!--div class="idioma">idioma</div>
+<div class="logo"></div>
+<header>Bienvenidos
+<div class="newsletter">Newsletter!</div>
+</header>
+<nav>
+<div class="boton inicio">Inicio</div>
+<div class="boton institucional">Institucional</div>
+<div class="boton mision">Nuestra Misión</div>
+<div class="boton testimonios">Testimonios</div>
+<div class="boton oracion">Oración</div>
+<div class="boton contacto">Contáctenos!</div>
+</nav>
+<section><p>Universo de Mascotas es una organización sin fines de lucro dedicada y abocada a ayudar a nuestras mascotas y a toda la vida animal, esos seres especiales que se encargan de alegrar y endulzar nuestros corazones.
+ 
+Conjunto a la ayuda de los amigos de las mascotas, y, de nuestros seguidores, pudimos levantar ésta organización para poder hacer frente a las adversidades a las que nuestros pequeños amigos se enfrentan.</p></section-->
+
+<div id="contenedor">
+<div class="idioma">idioma</div>
+<h1><img src="../img/Universo-de-Mascotas-Logo.png" alt="Universo de mascotas centro de oracion para mascotas"></h1>
+<header>
+    <h2>Contactenos!!</h2>
+    <div class="newsletter">Newsletter!</div>
+    <nav>
+        <ul>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">institucional</a>
+            <ul>
+                <li><a href="#">¿quienes somos?</a>
+                <li><a href="#">¿que hacemos?</a>
+                <li><a href="#">¿donde estamos?</a>
+            </li>
+            </ul>
+            <li><a href="#">nuestra mision</a></li>
+            <li><a href="#">mascotas</a>
+                <ul>
+                <li><a href="#">perdidas</a></li>
+                <li><a href="#">encontradas</a>
+            </li>
+            </ul>
+            <li><a href="#">testimonios</a></li>
+            <li><a href="#">oraciones</a></li>
+            <li><a href="#">contactenos</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="formulario">
+<form name="formulario" class="contact_form" id="formulario" method="post" action="assest/enviar_email.php" enctype="multipart/form-data"> <div>
+                <ul>
+                <li>
+                    <span class="required_notification">* Datos requeridos</span>
+                </li>
+  
+            <li>
+                <label for="name">Nombre:</label>
+                <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required>
+                <span class="form_hint">Formato correcto: "Nombre (s)"</span>
+            </li>
+            
+            <li>
+                <label for="email">E-mail:</label>
+                <input type='text' name='E-mail' id='E-mail' placeholder="tu@correo.com" required>
+                <span class="form_hint">Formato correcto: "ejemplo@hotmail.com"</span>
+            </li>
+            
+            <li>
+                <label for="apellidos">Nombre de tu Mascota:</label>
+                <input type='text' name='Mascota' id='Mascota' placeholder="Nombre de tu Mascota" required>
+                <span class="form_hint">Formato correcto: "Mascota"</span>
+            </li>
+                    
+            <li>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje"></textarea>
+                    <span class="form_hint">Ingresar información adicional</span>
+ 
+                </li>
+            <li>
+                <label for="adjuntar archivo">Adjuntar archivo:</label>
+                <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher" required>
+            </li>
+            <li align='center'>
+                <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
+                <button class="submit" type='reset' value='Reiniiar formulario'>Borrar Datos</button>
+ 
+            </li>
+            </ul>
+        </form>
+    </section>
+</div>
+<div class="gradient"></div>
+</body>
+</html>

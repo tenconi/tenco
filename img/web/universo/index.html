@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Universo de Mascotas / Pets Universe</title>
+<link rel="icon" type="image/png" href="img/favicom.png" />
+<link href="fonts/fonts.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<style>
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%; 
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	} /*--reset--*/
+body {
+	background-image:url(img/lenguaje-x600px-72dpi.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center; 
+	width:100%;
+	position:absolute;
+	}
+
+#contenedor {
+	width:300px;
+	height:auto;
+	margin:auto;
+	margin-top:150px;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#FeC414;
+	}
+
+h1 {
+	display:block;
+	margin:auto;
+	padding:15px;
+	-webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.7));
+  	-ms-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.7));
+	filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.7));
+	}
+h2 {
+	font-family: 'lithosReg';
+	font-size: 25px;
+	color: #162324;
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.4));
+  	-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.4));
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.4));
+}
+
+.esp img{
+	float:left;
+	padding:5px;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+  	-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	transition:transform 0.3s ease-out;
+	-webkit-transition:transform 0.3s ease-out;
+	}
+.esp img:hover {
+	cursor:pointer;
+	transform:scale(1.0);
+}
+.esp img: hover> .subs{
+	display: block;
+}
+
+.eng img{
+	float:left;
+	padding:5px;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+  	-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	transition:transform 0.3s ease-out;
+	-webkit-transition:transform 0.3s ease-out;
+}
+.eng img:hover {
+	cursor:pointer;
+	transform:scale(1.0);
+}
+
+
+.deu img{
+	float:left;
+	padding:5px;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+  	-ms-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+	transition:transform 0.3s ease-out;
+	-webkit-transition:transform 0.3s ease-out;
+}
+.deu img:hover {
+	cursor:pointer;
+	transform:scale(1.0);
+	}
+
+
+
+.linea {
+	height: 1px;
+	width: 250px;
+	background-color: grey;
+	position: relative;
+	margin: 40px auto;
+}
+.idiomas {
+	width:400px;
+	height: 250px;
+	margin: 50px auto;
+	position: relative;
+	height:100px ;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: black;
+}
+.cont_id {
+	width: 100px;
+	height: 200px;
+	position: relative; ;
+	margin: auto;
+	float: left;
+
+}
+
+.esp .eng .deu {
+	width:100px;
+	height: 75px;
+	padding-bottom: 20px;
+	position: auto;
+}
+.subs {
+	width:100px;
+	height: 70px;
+	padding-top: 10px;
+	position: relative;
+	display:none;
+	font-family: 'lithosReg';
+	color: white;
+	font-style: normal;
+	text-align: center;
+}
+
+@media screen and (max-width:800px){
+	#contenedor {position: relative; margin:50px auto; display: block;}
+	h1 {}
+	h1 img {width: 80%;}
+	h2 {width: 100%; font-size: 90%;}
+	.linea {}
+	}
+</style>
+
+</head>
+
+<body>
+<div id="contenedor">
+    <h1><img src="img/Piramide.png" alt="Selección de Idioma, Select Language, Sprache Auswählen"></h1>
+    
+    <h2>Seleccione su idioma.</h2>
+
+    <div class="linea"> </div>
+    <div class="idiomas">
+	    <div class="cont_id">
+	        <div class="esp"><a href="ESP/index.html"><img src="img/esp.png" alt="español"><div class="subs">Seleccione su idioma</div></a></div>
+	    </div>
+
+         <div class="cont_id">
+         	<div class="eng"><a href="eng/index.html"><img src="img/eng.png" alt="english"><div class="subs">Select your language</div></a></div>
+         </div>
+
+         <div class="cont_id">
+         	<div class="deu"><a href="seite_im_bau.html"><img src="img/deu.png" alt="deutsch"><div class="subs">Wähle deine Sprache</div></a></div>
+         </div>
+    </div>
+</div>
+
+<!--<div class="cuerpo">
+    <div class="piramide">
+        <img src="img/Piramide.png" alt="Selección de Idioma, Select Language, Sprache Auswählen">
+    </div>
+    <div class="idiomas">
+        <div class="esp"><img src="img/ESP.png" alt="Español"></div>
+        <div class="eng"><img src="img/ENG.png" alt="English"></div>
+        <div class="deu"><img src="img/DEU.png" alt="Deutsch"></div>
+    </div>
+</div>-->
+
+</body>
+</html>

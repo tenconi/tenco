@@ -481,6 +481,19 @@ h2{
 .job-5{order:3;}
 .job-6{order:4;}
 
+[class|=web]{
+	background: rgba(225,225,255,0.9); 
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.jobtext-7, .jobtext-8{
+	margin-top: 20px;
+}
+
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{

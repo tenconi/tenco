@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'lithosBlack';
+  src: url('lithospro-black.eot?#iefix') format('embedded-opentype'),  
+       url('lithospro-black.otf')  format('opentype'),
+	     url('lithospro-black.woff') format('woff'), 
+       url('lithospro-black.woff2') format('woff2'), 
+       url('lithospro-black.ttf')  format('truetype'),
+       url('lithospro-black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lithosReg';
+  src: url('lithospro-regular.eot?#iefix') format('embedded-opentype'),  
+       url('lithospro-regular.otf')  format('opentype'),
+       url('lithospro-regular.woff') format('woff'), 
+       url('lithospro-regular.woff2') format('woff2'), 
+       url('lithospro-regular.ttf')  format('truetype'),
+       url('lithospro-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
