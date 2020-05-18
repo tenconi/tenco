@@ -70,9 +70,20 @@
 	</div>
 </div>
 
-<section id="skills" style="height:250px !important">
+<section id="skills" style="min-height:250px;max-height: 300px;">
 	<div class="container">
 		<h1 class="titulo">Habilidades y conocimientos</h1>
+
+		<div class="construction">
+			<div class="circulosss">
+				<div class="circ-01"> </div>
+				<div class="circ-02"> </div>
+				<div class="circ-03"> </div>
+				<div class="circ-04"> </div>
+				<div class="circ-05"> </div>
+			</div>
+			<p>EN CONSTRUCCION</p>
+		</div>
 	<!--	<p>
 			<ul>
 			<li>html</li>
@@ -104,8 +115,8 @@
 			<br>
 			<li>corel</li>
 		</ul>
-		</p>
-	</div> -->
+		</p>-->
+	</div> 
 </section>
 
 
@@ -307,7 +318,7 @@
 			</p>
 		</section>
 
-		<form id="form">
+		<form id="form" method="POST" action="service/send_phpmailer.php">
 			<input type="text" name="nombre" placeholder="Nombre o Razón Social" required>
 			<input type="email" name="correo" placeholder="e&#126;mail" required>
 			<textarea name="mensaje" placeholder="Dejenos su consulta y le responderemos a la brevedad." required></textarea>

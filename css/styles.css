@@ -217,7 +217,7 @@ header{
 	height: 95%;
 	min-height: 724px;
 	max-height: 1024px;
-	background-image: url(../img/dantest.jpg);
+	background-image: url(../img/dantest2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; /*ajustar imagen y el size*/
@@ -262,6 +262,80 @@ header{
 	background: #222;
 	color:#FFF;
 	display: block
+}
+
+.construction{
+	padding-top: 20px;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.circulosss{	
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.construction>p{
+	text-align: center;
+	font-size:1em;
+	color:#a1cfdf;
+}
+
+[class |= circ]{
+	width:25px;
+	height:25px;
+	border-radius:100%;
+	margin:5px;
+	background-color: #a1cfdf;
+	opacity: 0.2;
+}
+.circ-01{animation:circ01 1s infinite;}
+@keyframes circ01{
+	0%{}
+	10%{opacity: 1;}
+	25%{}
+	50%{}
+	75%{}
+	100%{}
+}
+
+.circ-02{animation:circ02 1s infinite;}
+@keyframes circ02{
+	0%{}
+	25%{opacity: 1;}
+	50%{}
+	75%{}
+	100%{}
+}
+
+.circ-03{animation:circ03 1s infinite;}
+@keyframes circ03{
+	0%{}
+	25%{}
+	50%{opacity: 1;}
+	75%{}
+	100%{}
+}
+
+.circ-04{animation:circ04 1s infinite;}
+@keyframes circ04{
+	0%{}
+	25%{}
+	50%{}
+	75%{opacity: 1;}
+	100%{}
+}
+
+.circ-05{animation:circ05 1s infinite;}
+@keyframes circ05{
+	0%{}
+	25%{}
+	50%{}
+	75%{}
+	90%{opacity: 1;}
+	100%{}
 }
 
 /* = = = = = = finaliza HABILIDADES = = = = = */
@@ -545,18 +619,39 @@ textarea{
 }
 .send_btn{
 	width:150px;
+	align-self: flex-end;
+	background: #f399c0;
+	color:#282c3f;
+	font-family: 'Raleway', sanserif;
+	font-size: 1em;
+	font-weight: 600;
 }
+.send_btn:hover{
+	background: #a1cfdf;
+	color:#282c3f;
+}
+.send_btn:active{
+	background: #87dc0f;
+	color:#282c3f;
+	box-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+}
+
 /* = = = = = = finaliza CONSULTAS = = = = = */
 
 footer{
 	color:#FFF;
 	text-align: center;
 	background:#222;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 150px;
 }
 footer>p{
 	font-size:0.8em;
 	font-weight: 400;
-	padding: 10px;
+	padding: 20px 10px 0px;
 }
 
 h1{
