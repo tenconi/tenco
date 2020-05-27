@@ -338,21 +338,33 @@ header{
 	90%{opacity: 1;}
 	100%{}
 }
-
-
+.habilidades{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+}
+.list-skill{
+	width:60%;
+}
 [class ^=skill-]{
 	border-bottom:solid 1px white;
 	padding:15px;
-	width:60%;
+	width:-;
 }
+
 .valoracion{
 	padding-top: 10px;
 }
 .description-skill{
-	color:#FFF;
+	color:#95d0da;
 	font-size: 0.9em;
 	font-weight: 400;
 	padding-top: 10px;
+}
+.skill_text{
+	color:#FFF;
+	width:40%;
+	padding-left: 4vh;
 }
 /* = = = = = = finaliza HABILIDADES = = = = = */
 
