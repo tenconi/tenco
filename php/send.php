@@ -7,5 +7,4 @@ $mensaje=$_POST["mensaje"];
 $contenido="Nombre: " . $nombre ."\nCorreo: " . $correo ."\nMensaje: " .$mensaje;
 mail($destino, "Consulta WEB", $contenido);
 header("Location:http://tenco.com.ar/tenco/#thanks");
-/*echo "Muchas gracias por el texto";*/
 ?>
