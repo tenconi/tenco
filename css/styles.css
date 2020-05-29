@@ -686,7 +686,6 @@ textarea{
 	color:#FFF;
 	align-self: center;
 	line-height: 105px;
-
 }
 
 
@@ -714,6 +713,17 @@ h1{
 	font-size: 3em;
 }
 
+.row-foot{
+	align-self: center
+}
+.foot_brand{	
+	display: flex;
+	flex-direction: row;
+}
+.foot_brand > img{
+	height:30px;
+}
+.foot_brand > p{margin-left: 15px;}
 .titulo{
 	padding: 10px 10px 20px 10px;
 	border-bottom: solid 4px #89c53f;
@@ -723,10 +733,13 @@ h1{
 p{
 	font-family: 'Raleway', sanserif;
 	font-weight: 600;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 1.7em;
 }
 h1+p{margin-top: 50px;}
+
+
+
 
 
 
