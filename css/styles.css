@@ -647,12 +647,16 @@ input, textarea{
 input{
 	min-height: 50px;
 	max-height: 50px;
+	font-family: 'Raleway', sanserif;
+	font-size: 1em;
 }
 textarea{
 	min-width: 100%;
 	max-width: 100%;
 	min-height: 150px;
 	max-height: 150px;
+	font-family: 'Raleway', sanserif;
+	font-size: 1em;
 }
 ::placeholder{
 	font-family: 'arial', sanserif;
@@ -667,6 +671,7 @@ textarea{
 	font-size: 1em;
 	font-weight: 600;
 	cursor: pointer;
+	border:none;
 }
 .send_btn:hover{
 	background: #a1cfdf;
