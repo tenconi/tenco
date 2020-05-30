@@ -266,9 +266,7 @@ header{
 }
 
 .construction{
-	padding-top: 20px;
-	width: 200px;
-	display: -; /*******     MODIFICAR    *******/
+	display:;
 	flex-direction: column;
 	margin: auto;
 }
@@ -285,8 +283,8 @@ header{
 }
 
 [class |= circ]{
-	width:25px;
-	height:25px;
+	width:10px;
+	height:10px;
 	border-radius:100%;
 	margin:5px;
 	background-color: #a1cfdf;
