@@ -758,6 +758,19 @@ footer a{
 	text-align: center;
 	align-self: center;
 }
+
+.social-foot{
+	display: flex;
+	justify-content: flex-end;
+}
+.foot-boton{
+	height: 37px;
+	width:37px;
+	border-radius:100%;
+	box-shadow: 0px 5px 5px rgba(2,2,2,0.2);
+	display: inline-block;
+	margin-left: 20px;
+}
 /* = = = = = = finaliza FOOTER = = = = = */
 
 .titulo{
