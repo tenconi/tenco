@@ -465,7 +465,7 @@ header{
 	}
 	25%{}
 	50%{}
-	75%{}
+	75%{}background
 	99%{border-bottom: solid 15px #FFF;}
 	100%{opacity: 0.93;
 		height: 100%;
@@ -474,7 +474,7 @@ header{
 
 @-webkit-keyframes cortina{
 	from{opacity: 0;
-		background: #95d0da;}
+		: #95d0da;}
 	to{opacity: 1;
 		background: #e192b4;}
 }
@@ -514,7 +514,7 @@ header{
 @-webkit-keyframes cerrar{
 	0%{}
 	25%{background:#a1cfdf;}
-	50%{transform:scale(0.6);}
+	50%{transform:scale(0.7);}
 	100%{}
 }
 
@@ -698,6 +698,10 @@ textarea{
 	color:#FFF;
 	align-self: center;
 	line-height: 105px;
+}
+#thanks .close {
+	margin:auto;
+	margin-top: 150px;
 }
 
 
