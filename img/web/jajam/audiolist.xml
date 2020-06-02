@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<songs>
+
+<song title="Maestros"
+path="Maestros.mp3"/>
+
+<song title="Changos"
+path="Changos.mp3"/>
+
+<song title="Semilla"
+path="Semilla.mp3"/>
+
+<song title="Chayla"
+path="Chayla.mp3"/>
+
+</songs>

@@ -1,0 +1,1 @@
+j = "*** Sabado 30 Oct  - 17 HS - PARQUE LEZAMA - Capital Federal  17 HS *** ";

@@ -634,15 +634,17 @@ h2{
 
 .works-web{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 [class|=web]{
 	background: rgba(225,225,255,0.9); 
 	display:flex;
 	flex-direction: row;
-	margin-bottom: 20px;
+	margin:0px 10px 15px 0px;
 	padding: 5px 5px 15px 5px;
 	border-radius: 5px;
+	width: 48%;
 }
 
 .jobtext-7, .jobtext-8{
@@ -652,7 +654,16 @@ iframe{
 	width:75%;
 	height:300px;
 }
-
+.imgframe{
+	width:75%;
+	height:300px;
+	background: url(../img/web/jajam/jajam.jpg) center;
+	background-size: cover;
+}
+.imgframe img{
+	width:100%;
+	height:auto;
+}
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{
