@@ -254,6 +254,23 @@ header{
 	color:;
 	background: #87dc0f;
 }
+
+#who_full{
+	position:absolute;
+	background: rgba(0,0,0,0.9);
+	height:100%;
+	min-height: 724px;
+	max-height: 1024px;
+	width: 100%;
+	display: flex;
+}
+.full-tit, .full-text{
+	color:#FFF;
+	text-shadow: 2px 2px 5px #000;
+}
+.full-text{
+	font-weight: 400;
+}
 /* = = = = = = finaliza QUIEN SOY = = = = = */
 
 #skills{
