@@ -592,7 +592,7 @@ header{
 #modal-brand{}
 
 [class |= job]{
-	background: rgba(225,225,225);
+	background: rgb(225,225,225);
 	border-radius: 5px;
 	width:48%;
 	display: flex;
@@ -620,7 +620,11 @@ h2{
 	color:#999;
 	font-weight: 400;
 }
-
+.descriptio-job{
+	font-family: 'Arial', sanserif;
+	font-size: 12px;
+	font-weight: 200;
+}
 .job-1{order:6;}
 .job-2{order:2;}
 .job-3{order:1;}
@@ -802,19 +806,30 @@ footer a{
 	font-family: 'Exo 2', sanserif;
 	text-align: center;
 	align-self: center;
+	padding-bottom: 10px;
 }
 
+.nav-foot > a:hover{
+	border-bottom:solid 2px #c2c2c2;
+}
 .social-foot{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 }
 .foot-boton{
-	height: 37px;
-	width:37px;
+	height: 30px;
+	width:30px;
 	border-radius:100%;
 	box-shadow: 0px 5px 5px rgba(2,2,2,0.2);
 	display: inline-block;
-	margin-left: 20px;
+	margin: 5px;
+}
+.foot-boton>img{
+	height:30px;
+	width:30px;
+}
+.foot-boton:hover{
+	animation:social_mov 0.3s linear; 
 }
 /* = = = = = = finaliza FOOTER = = = = = */
 
