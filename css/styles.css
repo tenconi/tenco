@@ -623,7 +623,7 @@ h2{
 .descriptio-job{
 	font-family: 'Arial', sanserif;
 	font-size: 12px;
-	font-weight: 200;
+	font-weight: 600;
 }
 .job-1{order:6;}
 .job-2{order:2;}
@@ -642,27 +642,30 @@ h2{
 	display:flex;
 	flex-direction: row;
 	margin:0px 10px 15px 0px;
-	padding: 5px 5px 15px 5px;
-	border-radius: 5px;
-	width: 48%;
+	padding: 5px 5px 10px 5px;
+	border-radius: 3px;
+	width: 49%;
 }
-
-.jobtext-7, .jobtext-8{
+[class|=web] p{
+	font-size: 12px;
+}
+.jobtext-7, .jobtext-8, .jobtext-9{
 	margin-top: 20px;
 }
 iframe{
 	width:75%;
-	height:300px;
+	height:250px;
 }
-.imgframe{
-	width:75%;
-	height:300px;
+#imgframe{
+	width:250%;
+	height:250px;
 	background: url(../img/web/jajam/jajam.jpg) center;
 	background-size: cover;
+	position: relative;
+	display: block;
+	border: 
 }
 .imgframe img{
-	width:100%;
-	height:auto;
 }
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
