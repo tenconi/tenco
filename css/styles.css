@@ -301,79 +301,6 @@ header{
 	display: flex;
 }
 
-/*
-.construction{
-	display:;
-	flex-direction: column;
-	margin: auto;
-}
-.circulosss{	
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.construction>p{
-	text-align: center;
-	font-size:1em;
-	color:#a1cfdf;
-}
-
-[class |= circ]{
-	width:10px;
-	height:10px;
-	border-radius:100%;
-	margin:5px;
-	background-color: #a1cfdf;
-	opacity: 0.2;
-}
-.circ-01{animation:circ01 1s infinite;}
-@keyframes circ01{
-	0%{}
-	10%{opacity: 1;}
-	25%{}
-	50%{}
-	75%{}
-	100%{}
-}
-
-.circ-02{animation:circ02 1s infinite;}
-@keyframes circ02{
-	0%{}
-	25%{opacity: 1;}
-	50%{}
-	75%{}
-	100%{}
-}
-
-.circ-03{animation:circ03 1s infinite;}
-@keyframes circ03{
-	0%{}
-	25%{}
-	50%{opacity: 1;}
-	75%{}
-	100%{}
-}
-
-.circ-04{animation:circ04 1s infinite;}
-@keyframes circ04{
-	0%{}
-	25%{}
-	50%{}
-	75%{opacity: 1;}
-	100%{}
-}
-
-.circ-05{animation:circ05 1s infinite;}
-@keyframes circ05{
-	0%{}
-	25%{}
-	50%{}
-	75%{}
-	90%{opacity: 1;}
-	100%{}
-}
-*/
 .habilidades{
 	margin-top: 50px;
 	display: flex;
@@ -495,21 +422,6 @@ header{
 	opacity: 1;
 	animation: cortina 0.3s linear;	
 }
-/*
-@-webkit-keyframes cortina{
-	0%{opacity: 0;
-		height: 0%;
-		border-bottom: solid 2px #FFF;
-	}
-	25%{}
-	50%{}
-	75%{}background
-	99%{border-bottom: solid 15px #FFF;}
-	100%{opacity: 0.93;
-		height: 100%;
-	}
-}*/
-
 @-webkit-keyframes cortina{
 	from{opacity: 0;
 		: #95d0da;}
@@ -905,10 +817,12 @@ header{
 	background: url(../img/dantest-cel.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+	height: auto;
 }
 .who_text{
 	text-shadow: 0px 0px 7px rgba(255,255,255,0.9);
 }
+.who_text p{font-weight: 600;}
 .container{
 	width:90%;
 	display: flex;
@@ -916,14 +830,25 @@ header{
 	flex-wrap: wrap;
 	padding: 30px 0px 0px;
 }
-
+.full-text{
+	font-size: 0.9em;
+}
+.full-text:last-child{
+	margin-bottom: 30px;
+}
+#who_full {
+	padding-bottom: 25px;
+	height: auto;
+}
+#who_full > .container > .close{
+	align-self: baseline;
+	bottom:-17px;
+}
 .who_text, .portfolio_text, .ask_me_text{
 	width: 100%;
 }
-
-
 .who_text>a{
-	margin:90px auto;
+	margin:250px auto 0px;
 }
 
 #skills{
@@ -932,20 +857,15 @@ header{
 #start, #who_am_i, #portfolio, #ask_me{
 	max-height:auto;
 }
-
-
 #portfolio>.container{
 display: flex;
 flex-direction: column;
 padding: 30px 0px 0px;
 }
-
-
 #works{
 	width: 100%;
 	height: auto;
 }
-
 .row{
 	width: 100%;
 	height:300px;
@@ -964,6 +884,7 @@ padding: 30px 0px 0px;
 	width: 90%;
 	padding:0px;
 }
+#portfolio{}
 [class |= job]{
 	width: 100%;
 	margin: auto;
@@ -977,9 +898,12 @@ padding: 30px 0px 0px;
 	border-top:solid 1px silver;
 	width: 100%;
 }
-[class |=jobtext]>h2{font-size: 1.1em;}
-.bajada{display: none;}
-
+[class |=jobtext]>h2{
+	font-size: 1.1em;
+}
+.bajada{
+	display: none;
+}
 .port-2, .port-3{
 	display: none;
 }
@@ -1003,14 +927,15 @@ padding: 30px 0px 0px;
 iframe{
 	width: 100%;
 	height: 250px;
-
 }
 
 p{
-	font-size: 1em;
+	font-size: 0.9em;
+	font-weight: 200;
 }
-
-
+h1+p{
+	margin-top: 30px;
+}
 #form{
 	width:100%;
 	margin-top: 10px;
