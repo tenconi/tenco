@@ -659,7 +659,7 @@ iframe{
 #imgframe{
 	width:250%;
 	height:250px;
-	background: url(../img/web/jajam/jajam.jpg) center;
+	background: url(../web/jajam/jajam.jpg) center;
 	background-size: cover;
 	position: relative;
 	display: block;
