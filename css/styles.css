@@ -79,7 +79,7 @@ header{
 }
 #start_nav a{
 	color: #FFF;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
@@ -244,7 +244,7 @@ header{
 .who_text>a{
 	color: #FFF;
 	background:#282c3f;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
