@@ -59,8 +59,8 @@ header{
 }
 .slogan{
 	color:#e192b4;
-	font-family: 'Raleway', sanserif;
-	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
 	font-variant: small-caps;
 	letter-spacing: 4px;
 	font-weight: 400;
@@ -225,8 +225,7 @@ header{
 
 #who_am_i{
 	height: 95%;
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 	background-image: url(../img/dantest2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -261,7 +260,6 @@ header{
 	transition: 0.3s;
 	}
 .who_text>a:active{
-	color:;
 	background: #87dc0f;
 }
 
@@ -269,8 +267,7 @@ header{
 	position:absolute;
 	background: rgba(0,0,0,0.9);
 	height:100%;
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 	width: 100%;
 	display: none;
 	animation: who_screen 0.3s linear; 
@@ -294,8 +291,7 @@ header{
 
 #skills{
 	height:100%;
-	min-height:724px;
-	max-height: 1024px;
+	min-height:100vh;
 	background: #222;
 	color:#FFF;
 	display: flex;
@@ -312,7 +308,6 @@ header{
 [class ^=skill-]{
 	border-bottom:solid 1px white;
 	padding:15px;
-	width:-;
 }
 
 .valoracion{
@@ -332,8 +327,7 @@ header{
 /* = = = = = = finaliza HABILIDADES = = = = = */
 
 #portfolio{
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 }
 
 #portfolio >.container{
@@ -424,7 +418,7 @@ header{
 }
 @-webkit-keyframes cortina{
 	from{opacity: 0;
-		: #95d0da;}
+		color : #95d0da;}
 	to{opacity: 1;
 		background: #e192b4;}
 }
@@ -449,7 +443,7 @@ header{
 	text-align: center;
 	font-size:30px;
 	line-height: 45px;
-	font-family: 'Arial', sanserif;	
+	font-family: 'Arial', sans-serif;	
 	border-radius: 50%;
 	align-items:flex-end;
 	margin: 7px 7px 0px 0px;
@@ -523,17 +517,17 @@ header{
 }
 
 h2{
-	font-family: 'Raleway',sanserif;
+	font-family: 'Raleway',sans-serif;
 }
 .bajada{
-	font-family: 'Arial', sanserif;
+	font-family: 'Arial', sans-serif;
 	font-size:0.9em;
 	font-style: italic;
 	color:#999;
 	font-weight: 400;
 }
 .descriptio-job{
-	font-family: 'Arial', sanserif;
+	font-family: 'Arial', sans-serif;
 	font-size: 12px;
 	font-weight: 600;
 }
@@ -575,17 +569,13 @@ iframe{
 	background-size: cover;
 	position: relative;
 	display: block;
-	border: 
 }
-.imgframe img{
-}
+.imgframe img{}
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{
-min-height: 724px;
-max-height: 1024px;
-
-	background: linear-gradient(180deg,#282c3f,#f399c0);
+min-height: 100vh;
+background: linear-gradient(180deg,#282c3f,#f399c0);
 }
 #ask_me>.container{
 	display: flex;
@@ -595,12 +585,10 @@ max-height: 1024px;
 	width: 40%;
 	color: #FFF;
 }
-
 #form{
 	width: 55%;
 	display: flex;
 	flex-direction: column;
-
 }
 
 input, textarea{
@@ -689,8 +677,8 @@ footer{
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
-footer>p{
-	font-size:0.8em;
+footer  p{
+	font-size:0.7em;
 	font-weight: 400;
 }
 
@@ -768,7 +756,7 @@ footer a{
 p{
 	font-family: 'Raleway', sanserif;
 	font-weight: 600;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.7em;
 }
 h1+p{margin-top: 50px;}
@@ -780,260 +768,260 @@ h1+p{margin-top: 50px;}
 
 @media screen and (max-width: 425px){
 
-.row-header{
-	justify-content: center;
-}
-header{
-	width:90%;
-	margin-top: 60px;
-}
-.tenco_brand{
-	width:80%;
-	margin:auto;
-	margin-bottom: 25px;
-}
-.slogan{
-	font-size:1.35em;
-	letter-spacing: 0.7px;
-	border-top:solid 1px #95d0da;
-	border-bottom:solid 1px #95d0da;
-}
-#linea{
-	width: 90%;
-	margin: auto;
-	display: none;
-}
+	.row-header{
+		justify-content: center;
+	}
+	header{
+		width:90%;
+		margin-top: 60px;
+	}
+	.tenco_brand{
+		width:80%;
+		margin:auto;
+		margin-bottom: 25px;
+	}
+	.slogan{
+		font-size:1.35em;
+		letter-spacing: 0.7px;
+		border-top:solid 1px #95d0da;
+		border-bottom:solid 1px #95d0da;
+	}
+	#linea{
+		width: 90%;
+		margin: auto;
+		display: none;
+	}
 
 
-#start_nav{
-	width: 100%;
-	margin: auto;
-}
-#start_nav>a{
-	font-size: 0.8em;
-}
+	#start_nav{
+		width: 100%;
+		margin: auto;
+	}
+	#start_nav>a{
+		font-size: 0.8em;
+	}
 
-#who_am_i{
-	background: url(../img/dantest-cel.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: auto;
-}
-.who_text{
-	text-shadow: 0px 0px 7px rgba(255,255,255,0.9);
-}
-.who_text p{font-weight: 600;}
-.container{
-	width:90%;
+	#who_am_i{
+		background: url(../img/dantest-cel.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: auto;
+	}
+	.who_text{
+		text-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+	}
+	.who_text p{font-weight: 600;}
+	.container{
+		width:90%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 30px 0px 0px;
+	}
+	.full-text{
+		font-size: 0.9em;
+	}
+	.full-text:last-child{
+		margin-bottom: 30px;
+	}
+	#who_full {
+		padding-bottom: 25px;
+		height: auto;
+	}
+	#who_full > .container > .close{
+		align-self: baseline;
+		bottom:-17px;
+	}
+	.who_text, .portfolio_text, .ask_me_text{
+		width: 100%;
+	}
+	.who_text>a{
+		margin:250px auto 0px;
+	}
+
+	#skills{
+		display:none;
+	}
+	#start, #who_am_i, #portfolio, #ask_me{
+		max-height:auto;
+	}
+	#portfolio>.container{
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	padding: 30px 0px 0px;
-}
-.full-text{
-	font-size: 0.9em;
-}
-.full-text:last-child{
-	margin-bottom: 30px;
-}
-#who_full {
-	padding-bottom: 25px;
-	height: auto;
-}
-#who_full > .container > .close{
-	align-self: baseline;
-	bottom:-17px;
-}
-.who_text, .portfolio_text, .ask_me_text{
-	width: 100%;
-}
-.who_text>a{
-	margin:250px auto 0px;
-}
+	}
+	#works{
+		width: 100%;
+		height: auto;
+	}
+	.row{
+		width: 100%;
+		height:300px;
+		margin-top: 30px;
+	}
+	.row a{
+		width: 100%;
+		height:200px;
+		margin-bottom: 55px;
+	}
+	.port-1{
+		display: flex;
+		flex-direction: column;
+	}
+	.works-brand, .works-web{
+		width: 90%;
+		height: auto;
+		padding:0px;
+	}
+	#portfolio{
+		height: auto;
 
-#skills{
-	display:none;
-}
-#start, #who_am_i, #portfolio, #ask_me{
-	max-height:auto;
-}
-#portfolio>.container{
-display: flex;
-flex-direction: column;
-padding: 30px 0px 0px;
-}
-#works{
-	width: 100%;
-	height: auto;
-}
-.row{
-	width: 100%;
-	height:300px;
-	margin-top: 30px;
-}
-.row a{
-	width: 100%;
-	height:200px;
-	margin-bottom: 55px;
-}
-.port-1{
-	display: flex;
-	flex-direction: column;
-}
-.works-brand, .works-web{
-	width: 90%;
-	height: auto;
-	padding:0px;
-}
-#portfolio{
-	height: auto;
+	}
+	#modal-brand, #modal-web{
+		height: auto;
+		padding: 5px 0px 12px;
+	}
+	[class |= job]{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5px;
+		padding: 2px 2px 4px;
+	}
+	[class |=jobtext]{
+		border:none;
+		border-top:solid 1px silver;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+	[class |=jobtext]>h2{
+		font-size: 1em;
+		margin: 0px;
+	}
+	.descriptio-job{
+		display: none;
+	}
+	.bajada{
+		display: none;
+	}
+	.port-2, .port-3{
+		display: none;
+	}
+	#modal-brand > .close, #modal-web > .close{
+		margin-left: 40%;
+		position: fixed;
+		top:100px;
+		box-shadow: 0px 0px 8px #000;
 
-}
-#modal-brand, #modal-web{
-	height: auto;
-	padding: 5px 0px 12px;
-}
-[class |= job]{
-	width: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 5px;
-	padding: 2px 2px 4px;
-}
-[class |=jobtext]{
-	border:none;
-	border-top:solid 1px silver;
-	width: 100%;
-	height: auto;
-	margin: 0px;
-}
-[class |=jobtext]>h2{
-	font-size: 1em;
-	margin: 0px;
-}
-.descriptio-job{
-	display: none;
-}
-.bajada{
-	display: none;
-}
-.port-2, .port-3{
-	display: none;
-}
-#modal-brand > .close, #modal-web > .close{
-	margin-left: 40%;
-	position: fixed;
-	top:100px;
-	box-shadow: 0px 0px 8px #000;
+	}
+	.titulo{
+		width:100%;
+		font-size: 1.7em;
+		text-align: center;
+	}
 
-}
-.titulo{
-	width:100%;
-	font-size: 1.7em;
-	text-align: center;
-}
+	#portfolio h2{
+		padding-top: 15px;
+	}
+	[class |= web]{
+		width:100%;
+		display: flex;
+		flex-direction: column;
+	}
+	iframe{
+		width: 100%;
+		height: 150px;
+	}
+	#imgframe{
+		width:100%;
+		height: 150px;
+	}
+	p{
+		font-size: 0.9em;
+		font-weight: 200;
+	}
+	h1+p{
+		margin-top: 30px;
+	}
+	#form{
+		width:100%;
+		margin-top: 10px;
+	}
+	.send_btn{
+		background:#282c3f;
+		color:#FFF;
+	}
+	.send_btn:hover{
+		background:#a1cfdf;
+		color:#282c3f;
+	}
+	.send_btn:active{
+		background:#87dc0f;
+		color:#282c3f;
+	}
+	footer{
+		height:auto;
+		padding-top: 7px;
+		padding-bottom: 10px;
+	}
 
-#portfolio h2{
-	padding-top: 15px;
-}
-[class |= web]{
-	width:100%;
-	display: flex;
-	flex-direction: column;
-}
-iframe{
-	width: 100%;
-	height: 150px;
-}
-#imgframe{
-	width:100%;
-	height: 150px;
-}
-p{
-	font-size: 0.9em;
-	font-weight: 200;
-}
-h1+p{
-	margin-top: 30px;
-}
-#form{
-	width:100%;
-	margin-top: 10px;
-}
-.send_btn{
-	background:#282c3f;
-	color:#FFF;
-}
-.send_btn:hover{
-	background:#a1cfdf;
-	color:#282c3f;
-}
-.send_btn:active{
-	background:#87dc0f;
-	color:#282c3f;
-}
-footer{
-	height:auto;
-	padding-top: 7px;
-	padding-bottom: 10px;
-}
+	.foot-cont{
+		display: flex;
+		flex-direction: row;
+	}
 
-.foot-cont,{
-	display: flex;
-	flex-direction: row;
-}
+	.foot_brand, .nav-foot{
+		display: flex;
+		flex-direction: column;
+	}
 
-.foot_brand, .nav-foot{
-	display: flex;
-	flex-direction: column;
-}
-
-.foot-cont{
-	align-items: center;
-	width: 90%
-}
-.foot_brand{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-.foot_brand>img{
-	width:90px;
-	height: auto;
-}
-.foot_brand>p{
-	margin-left: 4px;
-}
-.row-foot{
-	justify-content: flex-start;
-}
-.row-foot>p{
-	text-align: center;
-}
-.nav-foot{
-	font-size: 0.7em;
-}
-.nav-foot{
-	padding-bottom: 5px;
-}
-.nav-foot>a:hover{
-	border: none;
-	margin: 0px;
-}
-.social-foot{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-self: flex-start;
-}
-.foot-boton{
-	height:20px;
-	width:20px;
-}
-.foot-boton>img{
-	height:20px;
-	width:20px;
-}
+	.foot-cont{
+		align-items: center;
+		width: 90%;
+	}
+	.foot_brand{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	.foot_brand>img{
+		width:90px;
+		height: auto;
+	}
+	.foot_brand>p{
+		margin-left: 4px;
+	}
+	.row-foot{
+		justify-content: flex-start;
+	}
+	.row-foot>p{
+		text-align: center;
+	}
+	.nav-foot{
+		font-size: 0.7em;
+	}
+	.nav-foot{
+		padding-bottom: 5px;
+	}
+	.nav-foot>a:hover{
+		border: none;
+		margin: 0px;
+	}
+	.social-foot{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-self: flex-start;
+	}
+	.foot-boton{
+		height:20px;
+		width:20px;
+	}
+	.foot-boton>img{
+		height:20px;
+		width:20px;
+	}
 
 } 
