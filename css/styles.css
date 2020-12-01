@@ -759,10 +759,9 @@ p{
 	font-size: 1em;
 	line-height: 1.7em;
 }
-h1+p{margin-top: 50px;}
-
-
-
+h1+p{
+	margin-top: 50px;
+}
 
 /* = = = MEDIA QUERYES = = = */
 
