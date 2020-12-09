@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	outline: none;
 }
 html{
 	background: #282c3f; /*282c3f  // 404041 */
@@ -244,7 +245,7 @@ header{
 .who_text>a{
 	color: #FFF;
 	background:#282c3f;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
@@ -261,7 +262,6 @@ header{
 	transition: 0.3s;
 	}
 .who_text>a:active{
-	color:;
 	background: #87dc0f;
 }
 
@@ -300,7 +300,6 @@ header{
 	color:#FFF;
 	display: flex;
 }
-
 .habilidades{
 	margin-top: 50px;
 	display: flex;
@@ -312,9 +311,7 @@ header{
 [class ^=skill-]{
 	border-bottom:solid 1px white;
 	padding:15px;
-	width:-;
 }
-
 .valoracion{
 	padding-top: 10px;
 }
@@ -424,7 +421,7 @@ header{
 }
 @-webkit-keyframes cortina{
 	from{opacity: 0;
-		: #95d0da;}
+		background: #95d0da;}
 	to{opacity: 1;
 		background: #e192b4;}
 }
@@ -449,7 +446,7 @@ header{
 	text-align: center;
 	font-size:30px;
 	line-height: 45px;
-	font-family: 'Arial', sanserif;	
+	font-family: 'Arial', sans-serif;	
 	border-radius: 50%;
 	align-items:flex-end;
 	margin: 7px 7px 0px 0px;
@@ -523,17 +520,17 @@ header{
 }
 
 h2{
-	font-family: 'Raleway',sanserif;
+	font-family: 'Raleway',sans-serif;
 }
 .bajada{
-	font-family: 'Arial', sanserif;
+	font-family: 'Arial', sans-serif;
 	font-size:0.9em;
 	font-style: italic;
 	color:#999;
 	font-weight: 400;
 }
 .descriptio-job{
-	font-family: 'Arial', sanserif;
+	font-family: 'Arial', sans-serif;
 	font-size: 12px;
 	font-weight: 600;
 }
@@ -575,16 +572,12 @@ iframe{
 	background-size: cover;
 	position: relative;
 	display: block;
-	border: 
-}
-.imgframe img{
 }
 /* = = = = = = finaliza PORTFOLIO = = = = = */
 
 #ask_me{
-min-height: 724px;
-max-height: 1024px;
-
+	min-height: 724px;
+	max-height: 1024px;
 	background: linear-gradient(180deg,#282c3f,#f399c0);
 }
 #ask_me>.container{
@@ -613,7 +606,7 @@ input, textarea{
 input{
 	min-height: 50px;
 	max-height: 50px;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 }
 textarea{
@@ -621,11 +614,11 @@ textarea{
 	max-width: 100%;
 	min-height: 150px;
 	max-height: 150px;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 }
 ::placeholder{
-	font-family: 'arial', sanserif;
+	font-family: 'arial', sans-serif;
 	font-size: 14px;
 }
 .send_btn{
@@ -812,7 +805,6 @@ header{
 #start_nav>a{
 	font-size: 0.8em;
 }
-
 #who_am_i{
 	background: url(../img/dantest-cel.jpg) no-repeat;
 	background-size: cover;
@@ -926,14 +918,12 @@ padding: 30px 0px 0px;
 	position: fixed;
 	top:100px;
 	box-shadow: 0px 0px 8px #000;
-
 }
 .titulo{
 	width:100%;
 	font-size: 1.7em;
 	text-align: center;
 }
-
 #portfolio h2{
 	padding-top: 15px;
 }
@@ -979,7 +969,7 @@ footer{
 	padding-bottom: 10px;
 }
 
-.foot-cont,{
+.foot-cont{
 	display: flex;
 	flex-direction: row;
 }
@@ -988,7 +978,6 @@ footer{
 	display: flex;
 	flex-direction: column;
 }
-
 .foot-cont{
 	align-items: center;
 	width: 90%
