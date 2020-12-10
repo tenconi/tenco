@@ -3,6 +3,7 @@
 	padding: 0px;
 	box-sizing: border-box;
 	outline: none;
+	font-family: 'Roboto', sans-serif;
 }
 html{
 	background: #282c3f; /*282c3f  // 404041 */
@@ -10,9 +11,11 @@ html{
 body{}
 
 #start{
+	min-height: 100vh;
+	/*
 	height: 95%;
 	min-height: 724px;
-	max-height: 1024px;
+	max-height: 1024px;*/
 }
 
 .row-header{
@@ -60,15 +63,18 @@ header{
 }
 .slogan{
 	color:#e192b4;
-	font-family: 'Raleway', sanserif;
-	font-size: 1.5em;
-	font-variant: small-caps;
-	letter-spacing: 4px;
-	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 300;
 	text-align: center;/*
 	border-top: solid 1px #95d0da;
 	border-bottom: solid 1px #95d0da;*/
 	padding: 15px 0px 20px;
+}
+.slogan span{
+	font-size: 1.2em;
 }
 #linea{
 	width: 425px;
@@ -80,7 +86,7 @@ header{
 }
 #start_nav a{
 	color: #FFF;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
@@ -225,9 +231,7 @@ header{
 
 
 #who_am_i{
-	height: 95%;
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 	background-image: url(../img/dantest2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -245,7 +249,7 @@ header{
 .who_text>a{
 	color: #FFF;
 	background:#282c3f;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
@@ -269,8 +273,7 @@ header{
 	position:absolute;
 	background: rgba(0,0,0,0.9);
 	height:100%;
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 	width: 100%;
 	display: none;
 	animation: who_screen 0.3s linear; 
@@ -294,8 +297,7 @@ header{
 
 #skills{
 	height:100%;
-	min-height:724px;
-	max-height: 1024px;
+	min-height:100vh;
 	background: #222;
 	color:#FFF;
 	display: flex;
@@ -329,8 +331,7 @@ header{
 /* = = = = = = finaliza HABILIDADES = = = = = */
 
 #portfolio{
-	min-height: 724px;
-	max-height: 1024px;
+	min-height: 100vh;
 }
 
 #portfolio >.container{
@@ -520,19 +521,19 @@ header{
 }
 
 h2{
-	font-family: 'Raleway',sans-serif;
+	font-family: 'Roboto',sans-serif;
 }
 .bajada{
-	font-family: 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size:0.9em;
 	font-style: italic;
 	color:#999;
 	font-weight: 400;
 }
 .descriptio-job{
-	font-family: 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .job-1{order:6;}
 .job-2{order:2;}
@@ -593,7 +594,6 @@ iframe{
 	width: 55%;
 	display: flex;
 	flex-direction: column;
-
 }
 
 input, textarea{
@@ -602,11 +602,12 @@ input, textarea{
 	padding: 10px;
 	border-radius:2px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	outline: none;
 }
 input{
 	min-height: 50px;
 	max-height: 50px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 }
 textarea{
@@ -614,11 +615,11 @@ textarea{
 	max-width: 100%;
 	min-height: 150px;
 	max-height: 150px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 }
 ::placeholder{
-	font-family: 'arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 }
 .send_btn{
@@ -626,7 +627,7 @@ textarea{
 	align-self: flex-end;
 	background: #f399c0;
 	color:#282c3f;
-	font-family: 'Raleway', sanserif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	font-weight: 600;
 	cursor: pointer;
@@ -655,10 +656,11 @@ textarea{
 #thanks:target{
 	display: flex;
 }
-#thanks>h1{
+#thanks>p{
 	color:#FFF;
 	align-self: center;
 	line-height: 105px;
+	font-size: 2rem;
 }
 #thanks .close {
 	margin:auto;
@@ -682,14 +684,26 @@ footer{
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
-footer>p{
+footer > p{
 	font-size:0.8em;
 	font-weight: 400;
 }
 
 h1{
-	font-family: 'Exo 2', sanserif;
-	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+h1::after{
+	content: '';
+	display: block;
+	margin-top: 1.2rem;
+	width:100px;
+	height: 3px;
+	background-color: #89c53f;
+
 }
 
 .row-foot{
@@ -698,7 +712,7 @@ h1{
 }
 .row-foot>p{
 	font-weight: 400;
-color: #c2c2c2;
+	color: #c2c2c2;
 }
 .foot_brand{	
 	display: flex;
@@ -722,7 +736,8 @@ color: #c2c2c2;
 footer a{
 	text-decoration: none;
 	color:#c2c2c2;
-	font-family: 'Exo 2', sanserif;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	align-self: center;
 	padding-bottom: 10px;
@@ -752,15 +767,15 @@ footer a{
 }
 /* = = = = = = finaliza FOOTER = = = = = */
 
-.titulo{
+/*.titulo{
 	padding: 10px 10px 20px 10px;
 	border-bottom: solid 4px #89c53f;
 	display: inline-block;
 }
-
+*/
 p{
-	font-family: 'Raleway', sanserif;
-	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	font-size: 1.2em;
 	line-height: 1.7em;
 }
@@ -773,256 +788,253 @@ h1+p{margin-top: 50px;}
 
 @media screen and (max-width: 425px){
 
-.row-header{
-	justify-content: center;
-}
-header{
-	width:90%;
-	margin-top: 60px;
-}
-.tenco_brand{
-	width:80%;
-	margin:auto;
-	margin-bottom: 25px;
-}
-.slogan{
-	font-size:1.35em;
-	letter-spacing: 0.7px;
-	border-top:solid 1px #95d0da;
-	border-bottom:solid 1px #95d0da;
-}
-#linea{
-	width: 90%;
-	margin: auto;
-	display: none;
-}
+	.row-header{
+		justify-content: center;
+	}
+	header{
+		width:90%;
+		margin-top: 60px;
+	}
+	.tenco_brand{
+		width:80%;
+		margin:auto;
+		margin-bottom: 25px;
+	}
+	.slogan{
+		font-size:1.35em;
+		letter-spacing: 0.7px;
+		border-top:solid 1px #95d0da;
+		border-bottom:solid 1px #95d0da;
+	}
+	#linea{
+		width: 90%;
+		margin: auto;
+		display: none;
+	}
 
+	#start_nav{
+		width: 100%;
+		margin: auto;
+	}
+	#start_nav>a{
+		font-size: 0.8em;
+	}
+	#who_am_i{
+		background: url(../img/dantest-cel.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: auto;
+	}
+	.who_text{
+		text-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+	}
+	.who_text p{font-weight: 300;}
+	.container{
+		width:90%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 30px 0px 0px;
+	}
+	.full-text{
+		font-size: 0.9em;
+	}
+	.full-text:last-child{
+		margin-bottom: 30px;
+	}
+	#who_full {
+		padding-bottom: 25px;
+		height: auto;
+	}
+	#who_full > .container > .close{
+		align-self: baseline;
+		bottom:-17px;
+	}
+	.who_text, .portfolio_text, .ask_me_text{
+		width: 100%;
+	}
+	.who_text>a{
+		margin:250px auto 0px;
+	}
 
-#start_nav{
-	width: 100%;
-	margin: auto;
-}
-#start_nav>a{
-	font-size: 0.8em;
-}
-#who_am_i{
-	background: url(../img/dantest-cel.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: auto;
-}
-.who_text{
-	text-shadow: 0px 0px 7px rgba(255,255,255,0.9);
-}
-.who_text p{font-weight: 600;}
-.container{
-	width:90%;
+	#skills{
+		display:none;
+	}
+	#start, #who_am_i, #portfolio, #ask_me{
+		max-height:auto;
+	}
+	#portfolio>.container{
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	padding: 30px 0px 0px;
-}
-.full-text{
-	font-size: 0.9em;
-}
-.full-text:last-child{
-	margin-bottom: 30px;
-}
-#who_full {
-	padding-bottom: 25px;
-	height: auto;
-}
-#who_full > .container > .close{
-	align-self: baseline;
-	bottom:-17px;
-}
-.who_text, .portfolio_text, .ask_me_text{
-	width: 100%;
-}
-.who_text>a{
-	margin:250px auto 0px;
-}
+	}
+	#works{
+		width: 100%;
+		height: auto;
+	}
+	.row{
+		width: 100%;
+		height:300px;
+		margin-top: 30px;
+	}
+	.row a{
+		width: 100%;
+		height:200px;
+		margin-bottom: 55px;
+	}
+	.port-1{
+		display: flex;
+		flex-direction: column;
+	}
+	.works-brand, .works-web{
+		width: 90%;
+		height: auto;
+		padding:0px;
+	}
+	#portfolio{
+		height: auto;		
+	}
+	#modal-brand, #modal-web{
+		height: auto;
+		padding: 5px 0px 12px;
+	}
+	[class |= job]{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5px;
+		padding: 2px 2px 4px;
+	}
+	[class |=jobtext]{
+		border:none;
+		border-top:solid 1px silver;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+	[class |=jobtext]>h2{
+		font-size: 1em;
+		margin: 0px;
+	}
+	.descriptio-job{
+		display: none;
+	}
+	.bajada{
+		display: none;
+	}
+	.port-2, .port-3{
+		display: none;
+	}
+	#modal-brand > .close, #modal-web > .close{
+		margin-left: 40%;
+		position: fixed;
+		top:100px;
+		box-shadow: 0px 0px 8px #000;
+	}
+	.titulo{
+		width:100%;
+		text-align: center;
+	}
+	#portfolio h2{
+		padding-top: 15px;
+	}
+	[class |= web]{
+		width:100%;
+		display: flex;
+		flex-direction: column;
+	}
+	iframe{
+		width: 100%;
+		height: 150px;
+	}
+	#imgframe{
+		width:100%;
+		height: 150px;
+	}
+	p{
+		font-size: 0.9em;
+		font-weight: 300;
+	}
+	h1+p{
+		margin-top: 30px;
+	}
+	#form{
+		width:100%;
+		margin-top: 10px;
+	}
+	.send_btn{
+		background:#282c3f;
+		color:#FFF;
+	}
+	.send_btn:hover{
+		background:#a1cfdf;
+		color:#282c3f;
+	}
+	.send_btn:active{
+		background:#87dc0f;
+		color:#282c3f;
+	}
+	footer{
+		height:auto;
+		padding-top: 7px;
+		padding-bottom: 10px;
+	}
 
-#skills{
-	display:none;
-}
-#start, #who_am_i, #portfolio, #ask_me{
-	max-height:auto;
-}
-#portfolio>.container{
-display: flex;
-flex-direction: column;
-padding: 30px 0px 0px;
-}
-#works{
-	width: 100%;
-	height: auto;
-}
-.row{
-	width: 100%;
-	height:300px;
-	margin-top: 30px;
-}
-.row a{
-	width: 100%;
-	height:200px;
-	margin-bottom: 55px;
-}
-.port-1{
-	display: flex;
-	flex-direction: column;
-}
-.works-brand, .works-web{
-	width: 90%;
-	height: auto;
-	padding:0px;
-}
-#portfolio{
-	height: auto;
+	.foot-cont{
+		display: flex;
+		flex-direction: row;
+	}
 
-}
-#modal-brand, #modal-web{
-	height: auto;
-	padding: 5px 0px 12px;
-}
-[class |= job]{
-	width: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 5px;
-	padding: 2px 2px 4px;
-}
-[class |=jobtext]{
-	border:none;
-	border-top:solid 1px silver;
-	width: 100%;
-	height: auto;
-	margin: 0px;
-}
-[class |=jobtext]>h2{
-	font-size: 1em;
-	margin: 0px;
-}
-.descriptio-job{
-	display: none;
-}
-.bajada{
-	display: none;
-}
-.port-2, .port-3{
-	display: none;
-}
-#modal-brand > .close, #modal-web > .close{
-	margin-left: 40%;
-	position: fixed;
-	top:100px;
-	box-shadow: 0px 0px 8px #000;
-}
-.titulo{
-	width:100%;
-	font-size: 1.7em;
-	text-align: center;
-}
-#portfolio h2{
-	padding-top: 15px;
-}
-[class |= web]{
-	width:100%;
-	display: flex;
-	flex-direction: column;
-}
-iframe{
-	width: 100%;
-	height: 150px;
-}
-#imgframe{
-	width:100%;
-	height: 150px;
-}
-p{
-	font-size: 0.9em;
-	font-weight: 200;
-}
-h1+p{
-	margin-top: 30px;
-}
-#form{
-	width:100%;
-	margin-top: 10px;
-}
-.send_btn{
-	background:#282c3f;
-	color:#FFF;
-}
-.send_btn:hover{
-	background:#a1cfdf;
-	color:#282c3f;
-}
-.send_btn:active{
-	background:#87dc0f;
-	color:#282c3f;
-}
-footer{
-	height:auto;
-	padding-top: 7px;
-	padding-bottom: 10px;
-}
-
-.foot-cont{
-	display: flex;
-	flex-direction: row;
-}
-
-.foot_brand, .nav-foot{
-	display: flex;
-	flex-direction: column;
-}
-.foot-cont{
-	align-items: center;
-	width: 90%
-}
-.foot_brand{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-.foot_brand>img{
-	width:90px;
-	height: auto;
-}
-.foot_brand>p{
-	margin-left: 4px;
-}
-.row-foot{
-	justify-content: flex-start;
-}
-.row-foot>p{
-	text-align: center;
-}
-.nav-foot{
-	font-size: 0.7em;
-}
-.nav-foot{
-	padding-bottom: 5px;
-}
-.nav-foot>a:hover{
-	border: none;
-	margin: 0px;
-}
-.social-foot{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-self: flex-start;
-}
-.foot-boton{
-	height:20px;
-	width:20px;
-}
-.foot-boton>img{
-	height:20px;
-	width:20px;
-}
+	.foot_brand, .nav-foot{
+		display: flex;
+		flex-direction: column;
+	}
+	.foot-cont{
+		align-items: center;
+		width: 90%
+	}
+	.foot_brand{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	.foot_brand>img{
+		width:90px;
+		height: auto;
+	}
+	.foot_brand>p{
+		margin-left: 4px;
+	}
+	.row-foot{
+		justify-content: flex-start;
+	}
+	.row-foot>p{
+		text-align: center;
+	}
+	.nav-foot{
+		font-size: 0.7em;
+	}
+	.nav-foot{
+		padding-bottom: 5px;
+	}
+	.nav-foot>a:hover{
+		border: none;
+		margin: 0px;
+	}
+	.social-foot{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-self: flex-start;
+	}
+	.foot-boton{
+		height:20px;
+		width:20px;
+	}
+	.foot-boton>img{
+		height:20px;
+		width:20px;
+	}
 
 } 
