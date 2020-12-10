@@ -42,7 +42,7 @@ $mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los 
 
 $mail->Subject = "Consulta Web"; // Este es el titulo del email.
 $mensajeHtml = nl2br($mensaje);
-$mail->Body = "{$mensajeHtml} <br /><br />Formulario de ejemplo. By DonWeb<br />"; // Texto del email en formato HTML
+$mail->Body = "{$mensajeHtml} <br /><br />Consulta desde 'tenco.com.ar' <br />"; // Texto del email en formato HTML
 $mail->AltBody = "{$mensaje} \n\n Formulario de ejemplo By DonWeb"; // Texto sin formato HTML
 // FIN - VALORES A MODIFICAR //
 
